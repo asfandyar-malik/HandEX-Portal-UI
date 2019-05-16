@@ -6468,6 +6468,11 @@ body {
   color: #fff;
   font-weight: 600; }
 
+.form-content .input-field input[type="submit"] {
+  padding: 10px 20px;
+  background: #47e1c1;
+  color: #fff;
+  border-radius: 3px; }
 .form-content .input-field label {
   position: relative;
   left: 0;
