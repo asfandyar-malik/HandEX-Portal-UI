@@ -12,3 +12,7 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.col.s12 > .btn {
+    width: 100%;
+}
