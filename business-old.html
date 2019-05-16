@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>handex</title>
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="section">
+                <div class="form-progress">
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <ul class="progressbar">
+                                <li class="active" tab_index="1">Step 1</li>
+                                <li tab_index="2">Step 2</li>
+                                <li tab_index="3">Step 3</li>
+                                <li tab_index="4">Step 4</li>
+                                <li tab_index="5">Step 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <!-- stpe 1 start -->
+                    <div class="step-1 tab">
+                        <!--   Form Navigation Section   -->
+                        <div class="row form-nav-top">
+                            <div class="col s12 m4">
+                                <div class="form-nav">
+                                    <p><span> 10% Complete </span></p>
+                                </div>
+                            </div>
+                            <div class="col s12 m4">
+                                <div class="form-nav">
+                                    <h2>Your Business</h2>
+                                </div>
+                            </div>
+                            <div class="col s12 m4">
+                                <div class="form-nav right">
+                                    <a href="#">Save As Draft</a>
+                                    <button class="next" tab_index="2">Next Step</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   Inner content Section   -->
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="row">
+                                    <form class="col s12">
+                                        <div class="form-content">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <label for="cname">Company Name</label>
+                                                    <input id="cname" type="text" class="validate"> 
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="dproduct">Describe Your Products And/Or Services</label>
+                                                    <textarea id="dproduct" class="materialize-textarea" style="height: 100px;"></textarea>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="fgoods">Are Your Goods, Capital Goods?</label>
+                                                    <p><span class="yes">Yes</span><span class="no">No</span></p>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="fgoods">Do You Also Provide Services(Assembly, On-site Training Etc.)?</label>
+                                                    <p><span class="yes">Yes</span><span class="no">No</span></p>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="fgoods">How Would You Categorise The Type Of Goods Your Company Provides?</label>
+                                                    <select>
+                                                        <option value="" disabled selected>Please Select...</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="dproduct">Please Describe Your Industry In More Detail.</label>
+                                                    <textarea id="dproduct" class="materialize-textarea" style="height: 100px;"></textarea>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="fgoods">Do You Deliver As Part Of An Overall Project Together With Other Companies?</label>
+                                                    <p><span class="yes">Yes</span><span class="no">No</span></p>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="fgoods">Do Your Deliveries Or Services Affect A Sensitive Area?</label>
+                                                    <p style="margin-top:0px;color: #bbb;">Sensitive Areas Include National Parks And Other Areas Protected By National Or International Law, As Well As Sensitive Areas Of International, National Or Regional Importance.</p>
+                                                    <p><span class="yes yes-no-btns">Yes</span><span class="no yes-no-btns">No</span></p>
+                                                    <div class="row hide-section">
+                                                        <div class="input-field col s12">
+                                                            <label for="fgoods">What Type Of Area Does It Affect?</label>
+                                                            <select>
+                                                                <option value="" disabled selected>Please Select...</option>
+                                                                <option value="1">Option 1</option>
+                                                                <option value="2">Option 2</option>
+                                                                <option value="3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-field col s12">
+                                                            <label for="cname">Please Specify What Kind Of Sensitive Area It Is.</label>
+                                                            <input id="cname" type="text" class="validate"> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="fgoods">Is Your Export Subject To Export Authorization?</label>
+                                                    <p><span class="yes yes-no-btns">Yes</span><span class="no yes-no-btns">No</span></p>
+                                                    <div class="row hide-section">
+                                                        <div class="input-field col s12">
+                                                            <label for="dproduct">From Which Regulations?</label>
+                                                            <p style="margin-top:0px;color: #bbb;">Or Which Part/Section Of The Export List Does The License Requirement Arise?</p>
+                                                            <textarea id="dproduct" class="materialize-textarea" style="height: 100px;"></textarea>
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label for="fgoods">The Export License.</label>
+                                                            <select>
+                                                                <option value="" disabled selected>Please Select...</option>
+                                                                <option value="1">Option 1</option>
+                                                                <option value="2">Option 2</option>
+                                                                <option value="3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="fgoods">Do Your Deliver Used Goods?</label>
+                                                    <p><span class="yes">Yes</span><span class="no">No</span></p>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="parties">Have All Parties Already Signed The Contract For The Export Business?</label>
+                                                    <p><span class="yes">Yes</span><span class="no">No</span></p>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label for="ship">Do You Ship Your Goods/Equipment In Multiple Deliveries?</label>
+                                                    <p><span class="yes yes-no-btns">Yes</span><span class="no yes-no-btns">No</span></p>
+                                                    <div class="row hide-section">
+                                                        <div class="input-field col s12 m12">
+                                                            <label for="dproduct">Please Inform Us About The Delivery.</label>
+                                                            <p style="margin-top:0px;color: #bbb;">If Applicable, Delivery Dates Of Your Export Business.</p>
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label for="fgoods">Start Of Delivery</label>   
+                                                            <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label for="fgoods">Delivery End</label>     
+                                                            <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- step-2 start -->
+                    <div class="step-2 tab">
+                        <!--   Form Navigation Section   -->
+                        <div class="row form-nav-top">
+                            <div class="col s12 m4">
+                                <div class="form-nav">
+                                    <p><span> 10% Complete </span></p>
+                                </div>
+                            </div>
+                            <div class="col s12 m4">
+                                <div class="form-nav">
+                                    <h2>Your Business</h2>
+                                </div>
+                            </div>
+                            <div class="col s12 m4">
+                                <div class="form-nav right">
+                                    <a href="#">Save As Draft</a>
+                                    <button class="next" tab_index="3">Next Step</button>
+                                </div>
+                            </div>
+                        </div>
+                        test 2
+                    </div>
+
+                    <!-- step-3 start -->
+                    <div class="step-3 tab"> 
+                        test 3
+                    </div>
+
+                    <!-- step-4 start -->
+                    <div class="step-4 tab"> 
+                        test 4
+                    </div>
+
+                    <!-- step-5 start -->
+                    <div class="step-5 tab"> 
+                        test 5
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        <script type="text/javascript">
+            var curremt_tab = 1;
+
+            $(document).ready(function(){
+              $('.datepicker').datepicker();
+            });
+            $(".yes-no-btns").click(function (e) {
+              if($(this).hasClass("yes")){
+                $(this).closest(".input-field").find(".hide-section").show();
+              }else{
+                $(this).closest(".input-field").find(".hide-section").hide();
+              }
+            });
+
+            function changeTabs(curremt_tab_index) {
+                $('.tab').hide();
+                $('.step-'+curremt_tab_index).show();
+            }
+
+            $('.progressbar li, .next').click(function function_name(argument) {
+                console.log($(this).attr('tab_index'));
+                changeTabs($(this).attr('tab_index'));
+            });
+            
+        </script>
+    </body>
+</html>
