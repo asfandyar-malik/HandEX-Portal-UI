@@ -12,3 +12,15 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.sign-in .col.s12 > .btn {
+    width: 100%;
+}
+
+body .sign-in {
+    padding-top: 5%;
+}
+body .form-section .form-content {
+    width:90%;
+    padding-top: 10px;
+}

@@ -4,19 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <title>handex</title>
-
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-
 <div class="container">
     <div class="section sign-in">
-
-        <!--   Icon Section   -->
-        <div class="row">
+        <div class="row valign-wrapper">
             <div class="col s12 m6">
                 <div class="text-section black-text small-text">
                     <img src="handex-logo.png" alt="">
@@ -25,63 +21,58 @@
                         Wir brauchen nur noch ein Paar Informationen um zu starten.<br>
 
                     </p>
-                    <a href="#">Haben Sie bereits ein Account ? Bitte loggen Sie sich ein.</a>
+                    <a href="#" class="un"><u>Haben Sie bereits ein Account ? Bitte loggen Sie sich ein.</u></a>
                 </div>
             </div>
-
             <div class="col s12 m6">
-                <div class="row">
-                    <form class="col s12 custom-form">
+                <form action="" method="post">
+                    <div class="form-section z-depth-1">
                         <div class="row">
-                            <div class="input-field col s12">
-                                <input id="company_name" placeholder="Bitte eintragen" type="text" class="validate">
-                                <label for="email">Firmenname </label>
+                            <div class="col s12">
+                                <div class="form-content">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <label>Firmenname</label>
+                                            <input id="company_name" type="text" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                            <label>Vorname</label>
+                                            <input id="first_name" type="text" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                            <label>Nachname</label>
+                                            <input id="last_name" type="text" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                            <label>E-Mail</label>
+                                            <input id="postal" type="text" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                            <label>Telefonnummer</label>
+                                            <input id="city" type="text" class="validate">
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <label for="password">Passwort</label>
+                                            <input id="password" placeholder=" Mindestens 6 Zeichen" type="password"
+                                                   class="validate">
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <button class="btn btn-large z-depth-0 validate" type="submit" name="action">Registrieren
+                                                <i class="material-icons"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="first_name" type="text" placeholder="Bitte eintragen" class="validate">
-                                <label for="first_name">Vorname</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="last_name" placeholder="Bitte eintragen" type="text" class="validate">
-                                <label for="last_name">Nachname</label>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="email" placeholder="Bitte eintragen" type="text" class="validate">
-                                <label for="first_name">E-Mail</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="phone_number" placeholder="Bitte eintragen" type="text" class="validate">
-                                <label for="last_name">Telefonnummer</label>
-                            </div>
-                        </div>
-
-                            <div class="input-field col s12">
-                                <input id="password" placeholder="Mindestens 6 Zeichen" type="password" class="validate">
-                                <label for="password">Passwort</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <button class="btn btn-large validate" type="submit" name="action">Registrieren
-                                    <i class="material-icons right"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+                    </div>
+            </form>
         </div>
     </div>
-    <br><br>
-</div>
-
-<!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
 
 </body>
 </html>
