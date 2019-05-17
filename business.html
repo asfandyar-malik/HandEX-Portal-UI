@@ -17,7 +17,7 @@
                     <ul class="progressbar">
                         <li class="active" tab_index="1">Business</li>
                         <li tab_index="2">Customer</li>
-                        <li tab_index="3">Financing</li>
+                        <li tab_index="3">Transaction</li>
                         <li tab_index="4">Financing</li>
                         <li tab_index="5">Finalize</li>
                     </ul>
@@ -585,21 +585,21 @@
                                             </select>
                                         </div>
                                         <div class="input-field col s12 m12">
-                                        <div class="input-field col s12 m6">
+                                        <div class="input-field col s12 m6 nopadding">
                                             <label>Do You Deliver To This Address?</label>
-                                            <p><label for="no4"><input type="radio" id="no4" name="yes" value="No"/><span class="yes">Yes</span></label><label for="natural4"><input type="radio" id="natural4" name="natural4" value="No"/><span class="no">No</span></label></p> 
+                                            <p><label for="no4"><input type="radio" id="no4" name="yes" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="natural4"><input type="radio" id="natural4" name="natural4" value="No"/><span class="no yes-no-btns">No</span></label></p> 
                                         </div>
                                         </div>
                                         <div class="input-field col s12 m12">
-                                        <div class="input-field col s12 m6">
+                                        <div class="input-field col s12 m6 nopadding">
                                             <label>Is Your Customer A Public or Private Sector Company?</label>
-                                            <p><label for="pp1"><input type="radio" id="pp1" name="public" value="public"/><span class="yes">Public Sector</span></label><label for="pp2"><input type="radio" id="pp2" name="natural4" value="Private"/><span class="no">Private Sector</span></label></p> 
+                                            <p><label for="pp1"><input type="radio" id="pp1" name="public" value="public"/><span class="yes yes-no-btns">Public Sector</span></label><label for="pp2"><input type="radio" id="pp2" name="natural4" value="Private"/><span class="no yes-no-btns">Private Sector</span></label></p> 
                                         </div>
                                         </div>
                                         <div class="input-field col s12 m12">
-                                        <div class="input-field col s12 m6">
+                                        <div class="input-field col s12 m6 nopadding">
                                             <label>Do You Already Have Payment Experience With Your Customer?</label>
-                                            <p><label for="yes12"><input type="radio" id="yes12" name="public" value="yes"/><span class="yes">Yes</span></label><label for="no12"><input type="radio" id="no12" name="no12" value="no"/><span class="no">No</span></label></p> 
+                                            <p><label for="yes12"><input type="radio" id="yes12" name="public" value="yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no12"><input type="radio" id="no12" name="no12" value="no"/><span class="no yes-no-btns">No</span></label></p> 
                                         </div>
                                         </div>
                                         <div class="input-field col s12 m6">
@@ -611,7 +611,7 @@
                                             <input type="text" class="validate"> 
                                         </div>
                                         <div class="input-field col s12 m12">
-                                        <div class="input-field col s12 m6">
+                                        <div class="input-field col s12 m6 nopadding">
                                             <label>Tax ID</label>
                                             <input type="text" class="validate">
                                         </div>
@@ -702,7 +702,7 @@
                             </div>
                             <div class="col s12 m4">
                                 <div class="form-nav">
-                                    <h2>Financing</h2>
+                                    <h2>Payments and Financing</h2>
                                 </div>
                             </div>
                             <div class="col s12 m4">
@@ -716,630 +716,63 @@
                             <div class="col s12">
                                 <div class="form-content">
                                     <div class="row">
-                                        <div class="input-field col s12 m12">
-                                                <label>Are there any securities (e.g letter of credit, payment guarantees, etc.) planned this transaction?</label>
-                                                <p><label for="yes13"><input type="checkbox" id="yes13" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no13"><input type="checkbox" id="no13" name="no" value="No"/><span class="no yes-no-btns">No</span></label></p>
+                                        <div class="input-field col s12">
+                                                    <label>Are any Collateral to be used in this transaction?</label>
+                                                    <p><label for="tran-yes"><input type="radio" id="tran-yes" name="tran-yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="tran-no"><input type="radio" id="tran-no" name="tran-no" value="No"/><span class="no yes-no-btns">No</span></label></p>
                                                 <div class="row hide-section">
-                                                    <div class="input-field col s12 m12">              
-                                                        <label>What type of securities?</label>
+                                                    <div class="input-field col s12">
+                                                        <label>What type of Collateral?</label>
                                                     </div>
-                                                    <div class="input-field col s12 m6">              
+                                                    <div class="input-field col s12 m6">
                                                         <select>
-                                                            <option value="0">Please Select</option>
-                                                            <option value="1">Unbestätigtes Akkreditiv einer Bank</option>
-                                                            <option value="2">Bestätigtes Akkreditiv</option>
-                                                            <option value="3">Zahlungsgarantie einer Bank</option>
-                                                            <option value="4">Zahlungsgarantie eines Unternehmens</option>
-                                                            <option value="5">(eingetragener) Eigentumsvorbehalt (dingliche Sicherheit)</option>
-                                                            <option value="6">Pfandrecht (dingliche Sicherheit)</option>
-                                                            <option value="7">sonstige</option>
+                                                            <option value="" selected>Please select</option>
                                                         </select>
                                                     </div>
-                                                    <div class="input-field col s12 m6">              
+                                                    <div class="input-field col s12 m6">
                                                         <input type="text" class="validate">
-                                                    </div>
-                                                    <div class="input-field col s12 m12">  
-                                                        <label>What proportion of the contract value is covered by a security? (Payment Guarantee of a Bank)</label>            
-                                                        <input type="text" class="validate">
-                                                    </div>
-                                                    <div class="input-field col s12 m12">  
-                                                        <label>When did you you receive the securities? (Unconfirmed letter of credit from a bank)</label>            
-                                                        <select>
-                                                            <option value="0">Please Select</option>
-                                                            <option value="1">Vor Fabrikationsbeginn</option>
-                                                            <option value="2">Vor Liefer-/Leistungsbeginn</option>
-                                                            <option value="3">Später</option>
-                                                            <option value="4">Anderer Termin</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                        </div>
-                                        <div class="input-field col s12 m12">
-                                            <style type="text/css">
-                                                .financing-agreed .main-content{
-                                                    display: none;
-                                                }
-                                            </style>
-                                                <label>Have you already agreed on payment terms or own financing terms with your customer?</label>
-                                                <p><label for="yes15"><input type="checkbox" id="yes15" name="yes" value="Yes"/><span class="yes financing-yes-no-btns">Yes</span></label><label for="no15"><input type="checkbox" id="no15" name="no" value="No"/><span class="no financing-yes-no-btns">No</span></label></p>
-                                                <div class="row hide-section financing-agreed-yes financing-agreed">
-                                                    <div class="input-field col s12 m12">              
-                                                        <p>
-                                                            <label for="yes16"><input type="checkbox" id="yes16" name="yes" value="short-term (up to 2 years)"/><span class="yes financing-payment-structure" agreed-index="1">short-term (up to 2 years)</span></label>
-
-                                                            <label for="no16"><input type="checkbox" id="no16" name="no" value="mid-/long-term (more than 2 years)"/><span class="no financing-payment-structure" agreed-index="2">mid-/long-term (more than 2 years)</span></label>
-
-                                                            <label for="no17"><input type="checkbox" id="no17" name="no" value="No"/><span class="no financing-payment-structure" agreed-index="3">short and mid-/-long-term</span></label>
-                                                        </p>
-                                                        <div class="main-content main-content-1">
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>If you have agreed on a down payment before delivery, please indicate here.</label>
-                                                            </div>
-                                                            <div class="input-field col s12 m4">              
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m4">              
-                                                                <input type="text" class="validate" placeholder="Amount">
-                                                            </div>
-                                                            <div class="input-field col s12 m4">              
-                                                                <input type="text" class="validate" placeholder="Description">
-                                                            </div>
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>Which payments do you agree?</label>
-                                                            </div>
-                                                            <div class="input-field col s12 m1">            
-                                                                <p style="padding: 5px 0px;"><label>1. Rate</label></p>
-                                                                <p style="padding: 5px 0px;"><label>2. Rate</label></p>
-                                                                <p style="padding: 8px 0px;"><label>3. Rate</label></p>
-                                                                <p style="padding: 5px 0px;"><label>4. Rate</label></p>
-                                                                <p style="padding: 12px 0px;"><label>5. Rate</label></p>
-                                                            </div>
-                                                            <div class="input-field col s12 m3">              
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m1">              
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                            </div>
-                                                            <div class="input-field col s12 m1">              
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                            </div>
-                                                            <div class="input-field col s12 m3">              
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m3">              
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                            </div>
-                                                            <div class="input-field col s12 m12">
-                                                                <label>If you use payment means such as bill of exchange or promissory notes, please indicate here.</label>              
-                                                                <input type="text" class="validate">
-                                                            </div>
-                                                        </div>
-                                                        <div class="main-content main-content-2">
-                                                            <div class="input-field col s12 m12">
-                                                                <label>Please indicate amount and timing of down payments and interim payments.</label>              
-                                                                <p>Please note that the down payment must always be paid before delivery and must be at least 15% of the order value for medium / long-term payment terms (due to international regulations).</p>
-                                                            </div>
-                                                            <div class="input-field col s12 m3">
-                                                                <select>
-                                                                    <option value="Please Select">Please Select</option>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Please Select">Please Select</option>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Please Select">Please Select</option>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m3">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                            </div>
-                                                            <div class="input-field col s12 m3">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                            </div>
-                                                            <div class="input-field col s12 m12">
-                                                                <label>When will you receive down payment?</label>
-                                                                <select>
-                                                                    <option value="vor Fabrikationsbeginn">vor Fabrikationsbeginn</option>
-                                                                    <option value="vor Liefer /- Leistungbeginn">vor Liefer /- Leistungbeginn</option>
-                                                                    <option value="bei Betriebsbereitschaft">bei Betriebsbereitschaft</option>
-                                                                    <option value="anderer Termin">anderer Termin</option>
-                                                                </select>
-                                                            </div>
-                                                            
-                                                            <div class="input-field col s12 m12">
-                                                                <label>What is the repayment profile?</label>
-                                                                <select>
-                                                                    <option value="Please Select">Please Select</option>
-                                                                    <option value="Monatliche Tilgungsraten">Monatliche Tilgungsraten</option>
-                                                                    <option value="Vierteljährliche Tilgungsprofil">Vierteljährliche Tilgungsprofil</option>
-                                                                    <option value="Halbjährige Tilgungsprofil">Halbjährige Tilgungsprofil</option>
-                                                                    <option value="Unregelmäßig">Unregelmäßig</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m6">
-                                                                <label>When is the starting point of the credit agreement?</label>
-                                                                <select>
-                                                                    <option value="Please Select">Please Select</option>
-                                                                    <option value="mit Lieferung">mit Lieferung</option>
-                                                                    <option value="mit erster Lieferung (bei mehreren Lieferungen)">mit erster Lieferung (bei mehreren Lieferungen)</option>
-                                                                    <option value="mit jeweiliger Lieferung (bei mehreren Lieferungen)">mit jeweiliger Lieferung (bei mehreren Lieferungen)</option>
-                                                                    <option value="mittlerer gewogener Liefertermin (bei mehreren Lieferungen)">mittlerer gewogener Liefertermin (bei mehreren Lieferungen)</option>
-                                                                    <option value="mit Betriebsbereitschaft">mit Betriebsbereitschaft</option>
-                                                                    <option value="sonstige">sonstige</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m6">
-                                                                
-                                                            </div>
-                                                            <div class="input-field col s12 m12">
-                                                                <input type="text" class="validate" placeholder="Wenn sonstige ausgewahlt, bitte erläutern Sie, wann die Kreditlaufzeit beginnt.">
-                                                            </div>
-                                                            <div class="input-field col s12 m12">
-                                                                <label>Please indicate the number of installments</label>
-                                                                <input type="text" class="validate" placeholder="Anzahl der Raten">
-                                                            </div>
-                                                        </div>
-                                                        <div class="main-content main-content-3">
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>Bitte geben Sie zunächst die kurzfristigen Zahlungsbedingungen an.</label>
-                                                                <p>If you have agreed on a down payment before delivery, please indicate here.</p>
-                                                            </div>
-                                                            <div class="input-field col s12 m4">              
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m4">              
-                                                                <input type="text" class="validate" placeholder="Amount">
-                                                            </div>
-                                                            <div class="input-field col s12 m4">              
-                                                                <input type="text" class="validate" placeholder="Description">
-                                                            </div>
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>Which payments do you agree?</label>
-                                                            </div>
-                                                            <div class="input-field col s12 m1">            
-                                                                <p style="padding: 5px 0px;"><label>1. Rate</label></p>
-                                                                <p style="padding: 5px 0px;"><label>2. Rate</label></p>
-                                                                <p style="padding: 8px 0px;"><label>3. Rate</label></p>
-                                                                <p style="padding: 5px 0px;"><label>4. Rate</label></p>
-                                                                <p style="padding: 12px 0px;"><label>5. Rate</label></p>
-                                                            </div>
-                                                            <div class="input-field col s12 m3">              
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m1">              
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                            </div>
-                                                            <div class="input-field col s12 m1">              
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                            </div>
-                                                            <div class="input-field col s12 m3">              
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                                <select>
-                                                                    <option value="bis zu 1 Monate">bis zu 1 Monate</option>
-                                                                    <option value="bis zu 2 Monate">bis zu 2 Monate</option>
-                                                                    <option value="bis zu 3 Monate">bis zu 3 Monate</option>
-                                                                    <option value="bis zu 4 Monate">bis zu 4 Monate</option>
-                                                                    <option value="bis zu 5 Monate">bis zu 5 Monate</option>
-                                                                    <option value="bis zu 6 Monate">bis zu 6 Monate</option>
-                                                                    <option value="bis zu 7 Monate">bis zu 7 Monate</option>
-                                                                    <option value="bis zu 8 Monate">bis zu 8 Monate</option>
-                                                                    <option value="bis zu 9 Monate">bis zu 9 Monate</option>
-                                                                    <option value="bis zu 10 Monate">bis zu 10 Monate</option>
-                                                                    <option value="bis zu 11 Monate">bis zu 11 Monate</option>
-                                                                    <option value="bis zu 12 Monate">bis zu 12 Monate</option>
-                                                                    <option value="bis zu 13 Monate">bis zu 13 Monate</option>
-                                                                    <option value="bis zu 14 Monate">bis zu 14 Monate</option>
-                                                                    <option value="bis zu 15 Monate">bis zu 15 Monate</option>
-                                                                    <option value="bis zu 16 Monate">bis zu 16 Monate</option>
-                                                                    <option value="bis zu 17 Monate">bis zu 17 Monate</option>
-                                                                    <option value="bis zu 18 Monate">bis zu 18 Monate</option>
-                                                                    <option value="bis zu 19 Monate">bis zu 19 Monate</option>
-                                                                    <option value="bis zu 20 Monate">bis zu 20 Monate</option>
-                                                                    <option value="bis zu 21 Monate">bis zu 21 Monate</option>
-                                                                    <option value="bis zu 22 Monate">bis zu 22 Monate</option>
-                                                                    <option value="bis zu 23 Monate">bis zu 23 Monate</option>
-                                                                    <option value="bis zu 24 Monate">bis zu 24 Monate</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m3">              
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                                <input type="text" class="validate">
-                                                            </div>
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>Bitte geben Sie nun die mittel-/langfristigen Zahlungsbedingungen an.</label>
-                                                                <p>Please indicate amount and timing of down payments and interim payments.</p>
-                                                                <p style="font-style: italic;">Please note that the down payment must always be paid before delivery and must be at least 15% of the order value for medium / long-term payment terms (due to international regulations).</p>
-                                                            </div>
-                                                            <div class="input-field col s12 m3">              
-                                                                <select>
-                                                                    <option value="Please Select">Please Select</option>
-                                                                    <option value="Euro">Euro</option>
-                                                                    <option value="Dollar">Dollar</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m4">              
-                                                                <input type="text" class="validate" placeholder="0.00">
-                                                            </div>
-                                                            <div class="input-field col s12 m4">              
-                                                                <input type="text" class="validate">
-                                                            </div>
-                                                            <div class="input-field col s12 m1">              
-                                                                <label>%</label>
-                                                            </div>
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>When will you receive down payment?</label>
-                                                                <select>
-                                                                    <option value="Please Select">Please Select</option>
-                                                                    <option value="vor Fabrikationsbeginn">vor Fabrikationsbeginn</option>
-                                                                    <option value="vor Liefer /- Leistungbeginn">vor Liefer /- Leistungbeginn</option>
-                                                                    <option value="bei Betriebsbereitschaft">bei Betriebsbereitschaft</option>
-                                                                    <option value="anderer Termin">anderer Termin</option>
-                                                                    </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>What is the repayment profile?</label>
-                                                                <select>
-                                                                    <option value="Please Select">Please Select</option>
-                                                                    <option value="Monatliche Tilgungsraten">Monatliche Tilgungsraten</option>
-                                                                    <option value="Vierteljährliche Tilgungsprofil">Vierteljährliche Tilgungsprofil</option>
-                                                                    <option value="Halbjährige Tilgungsprofil">Halbjährige Tilgungsprofil</option>
-                                                                    <option value="Unregelmäßig">Unregelmäßig</option>
-                                                                    </select>
-                                                            </div>
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>When is the starting point of the credit agreement?</label>
-                                                                <select>
-                                                                    <option value="Please Select">Please Select</option>
-                                                                    <option value="mit Lieferung">mit Lieferung</option>
-                                                                    <option value="mit erster Lieferung (bei mehreren Lieferungen)">mit erster Lieferung (bei mehreren Lieferungen)</option>
-                                                                    <option value="mit jeweiliger Lieferung (bei mehreren Lieferungen)">mit jeweiliger Lieferung (bei mehreren Lieferungen)</option>
-                                                                    <option value="mittlerer gewogener Liefertermin (bei mehreren Lieferungen)">mittlerer gewogener Liefertermin (bei mehreren Lieferungen)</option>
-                                                                    <option value="mit Betriebsbereitschaft">mit Betriebsbereitschaft</option>
-                                                                    <option value="sonstige">sonstige</option>
-                                                                    </select>
-                                                                    <input type="text" class="validate" placeholder="Wenn sonstige ausgewahlt, bitte erläutern Sie, wann die Kreditlaufzeit beginnt.">
-                                                            </div>
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>Please indicate the number of installments</label>
-                                                                    <input type="text" class="validate" placeholder="Anzahl der Raten">
-                                                            </div>
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>If you use payment means such as bill of exchange or promissory notes, please indicate here.</label>
-                                                                    <input type="text" class="validate">
-                                                            </div>
-
-
-                                                        </div>
                                                     </div>
                                                     <div class="input-field col s12 m12">
-                                                        <label>Are you charging your customer interests?</label>             
-                                                        <p><label for="yes14"><input type="checkbox" id="yes14" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no14"><input type="checkbox" id="no14" name="no" value="No"/><span class="no yes-no-btns">No</span></label></p>
-                                                        <div class="row hide-section">
-                                                            <div class="input-field col s12 m12">              
-                                                                <label>In this case, there is the possibility to refinance your receivables against your buyer via forfaiting. This means that one of our partner banks buys your receivables and refinances up to 95% of the total claim amount.</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row hide-section financing-agreed-no">
-                                                    <div class="input-field col s12 m12">              
-                                                        <label class="main">What payment terms is your customer looking for?</label>
+                                                        <label>How much of the order value does the collateral over?</label>
                                                         <input type="text" class="validate">
                                                     </div>
+                                                    <div class="input-field col s12 m12">
+                                                    <div class="input-field col s12 m6 nopadding">
+                                                        <label>When will you receive the collateral?</label>
+                                                        <select>
+                                                            <option value="" selected>Please select</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-
-
+                                                </div>
                                         </div>
+                                        <div class="input-field col s12 m12">
+                                            <label>Have you already agreed a term of payment or your own financing with your customer?</label>
+                                            <p><label for="fanance-yes"><input type="radio" id="fanance-yes" name="public" value="fanance-yes"/><span class="yes yes-no-btns">Yes</span></label><label for="fanance-no"><input type="radio" id="fanance-no" name="fanance-no" value="no"/><span class="no yes-no-btns">No</span></label></p> 
+                                        </div>
+                                        <div class="input-field col s12 m12">
+                                            <div class="input-field col s12 m4 threecol">
+                                                <label>Short Teram</label>
+                                                <p>upto two year credit period</p> 
+                                            </div>
+                                            <div class="input-field col s12 m4 threecol">
+                                                <label>Mid to Long Term</label>
+                                                <p>Over two years</p> 
+                                            </div>
+                                            <div class="input-field col s12 m4 threecol">
+                                                <label>Equally short and mid to Long Term</label>
+                                            </div>
+                                        </div>
+                                        <div class="input-field col s12">
+                                                    <label>Are you charging your customers interest?</label>
+                                                    <p><label for="int-yes"><input type="radio" id="int-yes" name="int-yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="int-no"><input type="radio" id="int-no" name="int-no" value="No"/><span class="no yes-no-btns">No</span></label></p>
+                                                <div class="row hide-section">
+                                                    <div class="input-field col s12 m6">
+                                                        <label>In this scenario, you have the possibility to sell your receivables owed by your customer through a forfaiting transaction. This means that our partner bank buys your receivables and will refinance up to 95% of the total receivables amount.</label>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -1373,372 +806,47 @@
                                     <div class="row">
                                         <div class="input-field col s12 m12">              
                                             <label>Have you ever applied for Hermes Cover in the past?</label>
-                                            <p><label for="yes18"><input type="checkbox" id="yes18" name="yes" value="Yes"/><span class="no yes-no-btns">Yes</span></label><label for="no18"><input type="checkbox" id="no18" name="no" value="No"/><span class="yes yes-no-btns">No</span></label></p>
-                                            <div class="row hide-section">
-                                                <div class="input-field col s12 m12">              
-                                                    <label>Since you have not applied for Hermes Covers in the past, HandEX and our partner Euler Hermes would like to get to know you better. Please help us to understand to what extent you already have export experience and experience with defaulting foreign customers.</label>
-                                                </div>
-                                                <div class="input-field col s12 m12">              
-                                                    <label style="font-style: italic;">To what extent or for how many years do you have export experience with non-Hermes covered export transactions?</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m12">              
-                                                    <label style="font-style: italic;">Do you have longstanding export experience and knowledge of the local market?</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m12">              
-                                                    <label style="font-style: italic;">Please explain to what extent you have adequate claims management processes in place. Have you been confronted with late payments / bad debts in the past? What measures do you take in your company if a customer defaults on payments?</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                            </div>
+                                            <p><label for="Hermes-y"><input type="checkbox" id="Hermes-y" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="Hermes-n"><input type="checkbox" id="Hermes-n" name="no" value="No"/><span class="no yes-no-btns">No</span></label></p>
                                         </div>
-                                        <div class="input-field col s12 m12">              
-                                            <label>Please give your company information.</label>
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Company Name</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>DN-NR</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Telephone</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Street/House Number</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Postal code</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Country</label>
-                                            <select>
-                                                <option value="Please Select">Please Select</option>
-                                                <option value="Afghanistan">Afghanistan</option>
-                                                <option value="Albania">Albania</option>
-                                                <option value="Algeria">Algeria</option>
-                                                <option value="Andorra">Andorra</option>
-                                                <option value="Angola">Angola</option>
-                                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                                                <option value="Argentina">Argentina</option>
-                                                <option value="Armenia">Armenia</option>
-                                                <option value="Australia">Australia</option>
-                                                <option value="Austria">Austria</option>
-                                                <option value="Azerbaijan">Azerbaijan</option>
-                                                <option value="Bahamas">Bahamas</option>
-                                                <option value="Bahrain">Bahrain</option>
-                                                <option value="Bangladesh">Bangladesh</option>
-                                                <option value="Barbados">Barbados</option>
-                                                <option value="Belarus">Belarus</option>
-                                                <option value="Belgium">Belgium</option>
-                                                <option value="Belize">Belize</option>
-                                                <option value="Benin">Benin</option>
-                                                <option value="Bhutan">Bhutan</option>
-                                                <option value="Bolivia">Bolivia</option>
-                                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                                                <option value="Botswana">Botswana</option>
-                                                <option value="Brazil">Brazil</option>
-                                                <option value="Brunei">Brunei</option>
-                                                <option value="Bulgaria">Bulgaria</option>
-                                                <option value="Burkina Faso">Burkina Faso</option>
-                                                <option value="Burundi">Burundi</option>
-                                                <option value="Cabo Verde">Cabo Verde</option>
-                                                <option value="Cambodia">Cambodia</option>
-                                                <option value="Cameroon">Cameroon</option>
-                                                <option value="Canada">Canada</option>
-                                                <option value="Central African Republic (CAR)">Central African Republic (CAR)</option>
-                                                <option value="Chad">Chad</option>
-                                                <option value="Chile">Chile</option>
-                                                <option value="China">China</option>
-                                                <option value="Colombia">Colombia</option>
-                                                <option value="Comoros">Comoros</option>
-                                                <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
-                                                <option value="Republic of the Congo">Republic of the Congo</option>
-                                                <option value="Costa Rica">Costa Rica</option>
-                                                <option value="Cote d'Ivoire">Cote d'Ivoire</option>
-                                                <option value="Croatia">Croatia</option>
-                                                <option value="Cuba">Cuba</option>
-                                                <option value="Cyprus">Cyprus</option>
-                                                <option value="Czech Republic">Czech Republic</option>
-                                                <option value="Denmark">Denmark</option>
-                                                <option value="Djibouti">Djibouti</option>
-                                                <option value="Dominica">Dominica</option>
-                                                <option value="Dominican Republic">Dominican Republic</option>
-                                                <option value="Ecuador">Ecuador</option>
-                                                <option value="Egypt">Egypt</option>
-                                                <option value="El Salvador">El Salvador</option>
-                                                <option value="Equatorial Guinea">Equatorial Guinea</option>
-                                                <option value="Eritrea">Eritrea</option>
-                                                <option value="Estonia">Estonia</option>
-                                                <option value="Eswatini (formerly Swaziland)">Eswatini (formerly Swaziland)</option>
-                                                <option value="Ethiopia">Ethiopia</option>
-                                                <option value="Fiji">Fiji</option>
-                                                <option value="Finland">Finland</option>
-                                                <option value="France">France</option>
-                                                <option value="Gabon">Gabon</option>
-                                                <option value="Gambia">Gambia</option>
-                                                <option value="Georgia">Georgia</option>
-                                                <option value="Germany">Germany</option>
-                                                <option value="Ghana">Ghana</option>
-                                                <option value="Greece">Greece</option>
-                                                <option value="Grenada">Grenada</option>
-                                                <option value="Guatemala">Guatemala</option>
-                                                <option value="Guinea">Guinea</option>
-                                                <option value="Guinea-Bissau">Guinea-Bissau</option>
-                                                <option value="Guyana">Guyana</option>
-                                                <option value="Haiti">Haiti</option>
-                                                <option value="Honduras">Honduras</option>
-                                                <option value="Hungary">Hungary</option>
-                                                <option value="Iceland">Iceland</option>
-                                                <option value="India">India</option>
-                                                <option value="Indonesia">Indonesia</option>
-                                                <option value="Iran">Iran</option>
-                                                <option value="Iraq">Iraq</option>
-                                                <option value="Ireland">Ireland</option>
-                                                <option value="Israel">Israel</option>
-                                                <option value="Italy">Italy</option>
-                                                <option value="Jamaica">Jamaica</option>
-                                                <option value="Japan">Japan</option>
-                                                <option value="Jordan">Jordan</option>
-                                                <option value="Kazakhstan">Kazakhstan</option>
-                                                <option value="Kenya">Kenya</option>
-                                                <option value="Kiribati">Kiribati</option>
-                                                <option value="Kosovo">Kosovo</option>
-                                                <option value="Kuwait">Kuwait</option>
-                                                <option value="Kyrgyzstan">Kyrgyzstan</option>
-                                                <option value="Laos">Laos</option>
-                                                <option value="Latvia">Latvia</option>
-                                                <option value="Lebanon">Lebanon</option>
-                                                <option value="Lesotho">Lesotho</option>
-                                                <option value="Liberia">Liberia</option>
-                                                <option value="Libya">Libya</option>
-                                                <option value="Liechtenstein">Liechtenstein</option>
-                                                <option value="Lithuania">Lithuania</option>
-                                                <option value="Luxembourg">Luxembourg</option>
-                                                <option value="Macedonia (FYROM)">Macedonia (FYROM)</option>
-                                                <option value="Madagascar">Madagascar</option>
-                                                <option value="Malawi">Malawi</option>
-                                                <option value="Malaysia">Malaysia</option>
-                                                <option value="Maldives">Maldives</option>
-                                                <option value="Mali">Mali</option>
-                                                <option value="Malta">Malta</option>
-                                                <option value="Marshall Islands">Marshall Islands</option>
-                                                <option value="Mauritania">Mauritania</option>
-                                                <option value="Mauritius">Mauritius</option>
-                                                <option value="Mexico">Mexico</option>
-                                                <option value="Micronesia">Micronesia</option>
-                                                <option value="Moldova">Moldova</option>
-                                                <option value="Monaco">Monaco</option>
-                                                <option value="Mongolia">Mongolia</option>
-                                                <option value="Montenegro">Montenegro</option>
-                                                <option value="Morocco">Morocco</option>
-                                                <option value="Mozambique">Mozambique</option>
-                                                <option value="Myanmar (formerly Burma)">Myanmar (formerly Burma)</option>
-                                                <option value="Namibia">Namibia</option>
-                                                <option value="Nauru">Nauru</option>
-                                                <option value="Nepal">Nepal</option>
-                                                <option value="Netherlands">Netherlands</option>
-                                                <option value="New Zealand">New Zealand</option>
-                                                <option value="Nicaragua">Nicaragua</option>
-                                                <option value="Niger">Niger</option>
-                                                <option value="Nigeria">Nigeria</option>
-                                                <option value="North Korea">North Korea</option>
-                                                <option value="Norway">Norway</option>
-                                                <option value="Oman">Oman</option>
-                                                <option value="Pakistan">Pakistan</option>
-                                                <option value="Palau">Palau</option>
-                                                <option value="Palestine">Palestine</option>
-                                                <option value="Panama">Panama</option>
-                                                <option value="Papua New Guinea">Papua New Guinea</option>
-                                                <option value="Paraguay">Paraguay</option>
-                                                <option value="Peru">Peru</option>
-                                                <option value="Philippines">Philippines</option>
-                                                <option value="Poland">Poland</option>
-                                                <option value="Portugal">Portugal</option>
-                                                <option value="Qatar">Qatar</option>
-                                                <option value="Romania">Romania</option>
-                                                <option value="Russia">Russia</option>
-                                                <option value="Rwanda">Rwanda</option>
-                                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-                                                <option value="Saint Lucia">Saint Lucia</option>
-                                                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
-                                                <option value="Samoa">Samoa</option>
-                                                <option value="San Marino">San Marino</option>
-                                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-                                                <option value="Saudi Arabia">Saudi Arabia</option>
-                                                <option value="Senegal">Senegal</option>
-                                                <option value="Serbia">Serbia</option>
-                                                <option value="Seychelles">Seychelles</option>
-                                                <option value="Sierra Leone">Sierra Leone</option>
-                                                <option value="Singapore">Singapore</option>
-                                                <option value="Slovakia">Slovakia</option>
-                                                <option value="Slovenia">Slovenia</option>
-                                                <option value="Solomon Islands">Solomon Islands</option>
-                                                <option value="Somalia">Somalia</option>
-                                                <option value="South Africa">South Africa</option>
-                                                <option value="South Korea">South Korea</option>
-                                                <option value="South Sudan">South Sudan</option>
-                                                <option value="Spain">Spain</option>
-                                                <option value="Sri Lanka">Sri Lanka</option>
-                                                <option value="Sudan">Sudan</option>
-                                                <option value="Suriname">Suriname</option>
-                                                <option value="Swaziland (renamed to Eswatini)">Swaziland (renamed to Eswatini)</option>
-                                                <option value="Sweden">Sweden</option>
-                                                <option value="Switzerland">Switzerland</option>
-                                                <option value="Syria">Syria</option>
-                                                <option value="Taiwan">Taiwan</option>
-                                                <option value="Tajikistan">Tajikistan</option>
-                                                <option value="Tanzania">Tanzania</option>
-                                                <option value="Thailand">Thailand</option>
-                                                <option value="Timor-Leste">Timor-Leste</option>
-                                                <option value="Togo">Togo</option>
-                                                <option value="Tonga">Tonga</option>
-                                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-                                                <option value="Tunisia">Tunisia</option>
-                                                <option value="Turkey">Turkey</option>
-                                                <option value="Turkmenistan">Turkmenistan</option>
-                                                <option value="Tuvalu">Tuvalu</option>
-                                                <option value="Uganda">Uganda</option>
-                                                <option value="Ukraine">Ukraine</option>
-                                                <option value="United Arab Emirates (UAE)">United Arab Emirates (UAE)</option>
-                                                <option value="United Kingdom (UK)">United Kingdom (UK)</option>
-                                                <option value="United States of America (USA)">United States of America (USA)</option>
-                                                <option value="Uruguay">Uruguay</option>
-                                                <option value="Uzbekistan">Uzbekistan</option>
-                                                <option value="Vanuatu">Vanuatu</option>
-                                                <option value="Vatican City (Holy See)">Vatican City (Holy See)</option>
-                                                <option value="Venezuela">Venezuela</option>
-                                                <option value="Vietnam">Vietnam</option>
-                                                <option value="Yemen">Yemen</option>
-                                                <option value="Zambia">Zambia</option>
-                                                <option value="Zimbabwe">Zimbabwe</option>
-                                            </select>
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Number of employees</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Revenue in the last full fiscal year(in Euro Mio.)</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Rechtsträger-Kennung (Legal Entity Identifier, sofern vorhanden)</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Gründungsjahr</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Steuernummer</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Bilanzsumme im letzten vollen Geschäftsjahr</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Letztes volles Geschäftsjahr</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m12">              
-                                            <label>Externes Rating vorhanden</label>
-                                            <p><label for="yes18"><input type="checkbox" id="yes18" name="yes" value="Yes"/><span class="no yes-no-btns">Yes</span></label><label for="no18"><input type="checkbox" id="no18" name="no" value="No"/><span class="yes yes-no-btns">No</span></label></p>
-                                            <div class="row hide-section">
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Ratingagentur</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Rating</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Datum des Ratings</label>
-                                                    <input type="text" class="datepicker" placeholder="dd/mm/yyyy">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Firstname</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Lastname</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Email</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Function</label>
-                                            <input type="text" class="validate">
-                                        </div>
-                                        <div class="input-field col s12 m4">              
-                                            <label>Department</label>
-                                            <input type="text" class="validate">
-                                        </div>
+
                                         <div class="input-field col s12 m12">              
                                             <label>We need the following documents for the examination of your business</label>
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Self declaration (new customer)</label>
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <input type="file" name="myFile">
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Annual statement of importer</label>
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <input type="file" name="myFile">
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Credit burea information of importer</label>
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <input type="file" name="myFile">
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Environment and Social Audit information</label>
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <input type="file" name="myFile">
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Project memorandum (if applicable)</label>
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <input type="file" name="myFile">
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <label>Others</label>
-                                        </div>
-                                        <div class="input-field col s12 m6">              
-                                            <input type="file" name="myFile">
+                                            <p>Please provide the necessary documentation so we can make a fair assestment of your business, as well as that of your customer.</p>
                                         </div>
                                         <div class="input-field col s12 m12">              
-                                            <label>Please submit the declaration on corruption prevention.</label>
+                                            <div class="input-field col s12 m4 ">              
+                                                <label>Annual Statements</label>
+                                                <input type="file" name="myFile">
+                                            </div>
+                                            <div class="input-field col s12 m4 ">              
+                                                <label>Environmental & Social Information</label>
+                                                <input type="file" name="myFile">
+                                            </div>
+                                            <div class="input-field col s12 m4 ">              
+                                                <label>Project Memorandum</label>
+                                                <input type="file" name="myFile">
+                                            </div>
+                                            <div class="input-field col s12 m4 ">              
+                                                <label>Self-assessment</label>
+                                                <input type="file" name="myFile">
+                                            </div>
                                         </div>
-                                        <div class="input-field col s12 m12">              
-                                            <label>Compliance with legal regulations </label>
-                                            <p>We declare that the conclusion of the supply or service transaction has not been caused by a criminal act of an employee, the management or a holder of our company or any other person acting on our behalf or will not be brought about by such an act.</p>
-                                        </div>
-                                        <div class="input-field col s12 m12">              
-                                            <label>Information obligation </label>
-                                            <p>We are aware that in the application process and after taking over the export credit guarantee applied for and the commitment to submit an export credit guarantee for a tied financial loan for all circumstances of the transaction requested for cover, which are significant for the export credit guarantee, we fully and completely to give correct information. This includes responding to questions from the Confederation regarding the identity of individuals who have been or were involved in the conclusion of the supply or service business on our behalf, as well as questions about the reason for and amount of any payments to such persons.</p>
-                                        </div>
-                                        <div class="input-field col s12 m12">              
-                                            <label>Information on indictments, criminal and non-criminal sanctions as well as preliminary proceedings and blacklists.  </label>
-                                            <p>Employees, the management or proprietors of our company, or any other person involved in or acting on our behalf, or our company itself, are currently charged with a state court or convicted or sentenced by a state court within the last five years for a corruption offense</p>
 
+                                        <div class="input-field col s12 m12">              
+                                            <label>Please accept the declaration on corruption prevention.</label>
+                                        </div>
+                                        <div class="input-field col s12 greybox">
+                                        <div class="input-field col s12 m12">              
+                                            <label>Observance of legal regulations.</label>
+                                            <p>We declare that the conclusion of the delivery or service transaction has not been caused by a criminal act of an employee, the management or a holder of our company or any other person acting on our behalf or are not caused by such an act becomes. </p>
+                                        </div>
+                                        <div class="input-field col s12 m12">              
+                                            <label>Duty to provide information.</label>
+                                            <p>We are aware that in the application process and after taking over the export credit guarantee requested and in accordance with the commitment to submit an export credit guarantee for a tied financial loan, all circumstances of the business requested for cover, which are significant for the export credit guarantee, are fully due to the Confederation and to give correct information. This includes responding to questions from the Confederation regarding the identity of individuals who have been or were involved in the conclusion of the supply or service business on our behalf, as well as questions about the reason for and amount of any payments to such persons.</p>
+                                        </div>
+                                        <div class="input-field col s12 m12">              
+                                            <label>Indictments, criminal and non-criminal sanctions and investigations and revocation lists.</label>
+                                            <p>Employees, the management or owner of our company or other persons involved in this contract and acting on our behalf or our company itself are / is due to a corruption offense; </p>
                                         </div>
                                         <div class="input-field col s12 m12">              
                                             <ul>
@@ -1753,37 +861,36 @@
                                             <p><label for="yes20"><input type="checkbox" id="yes20" name="yes" value="Applies "/><span class="yes yes-no-btns">Applies </span></label><label for="no20"><input type="checkbox" id="no20" name="no" value="Not apply"/><span class="no yes-no-btns">Does not apply</span></label></p>
                                             <div class="row hide-section">
                                                 <div class="input-field col s12 m12">              
-                                                    <label>Bitte machen Sie nähere Angaben zu den oben stehenden Punkten hinsichtlich Anklagen, strafrechtlichen oder nicht-strafrechtlichen Sanktionen sowie Ermittlungsverfahren und Sperrlisten</label>
+                                                    <label>Please provide details of the above points regarding charges, criminal or non-criminal sanctions, and preliminary and blacklisting procedures. </label>
                                                     <input type="text" class="validate">
                                                 </div>
                                             </div>
                                         </div>
-                                         <div class="input-field col s12 m12"> 
+                                    </div>
+
+                                        <div class="input-field col s12 m12"> 
                                             <label>
-                                                <input type="checkbox" class="filled-in"/>
-                                                <span> The above information was provided by us to the best of our knowledge and belief and in consideration of the explanations</span>
-                                            </label>
-                                            <p>Do you deliver together with affiliates or are intermediaries involved? Then they have to sign the declaration on corruption prevention separately. Please forward the form accordingly and submit it to us.
-                                            Please submit the final statements last.
-                                            </p>
-                                         </div>
-                                         <div class="input-field col s12 m12"> 
-                                            <label>
-                                                <input type="checkbox" class="filled-in"/>
-                                                    <span>We accept the <a href="https://www.agaportal.de/_Resources/Persistent/3bfd6a43f17d04f9b34d523df323f0a44a9eaa17/ab_fab.pdf"> General Terms and Conditions for Supplier Credit Cover (G) </a> 
-                                                    in connection with the <a href="https://www.agaportal.de/_Resources/Persistent/3bfd6a43f17d04f9b34d523df323f0a44a9eaa17/ab_fab.pdf">Supplementary Provisions for Transfer of Assignments</span>
+                                                <input type="checkbox"/>
+                                                    <span class="terms">The above information was provided by us to the best of our knowledge and belief and in consideration of the explanations.</span>
                                             </label>
                                          </div>
                                          <div class="input-field col s12 m12"> 
                                             <label>
-                                                <input type="checkbox" class="filled-in"/>
-                                                <span>We have taken the privacy police  notice and agree to their validity.</span>
+                                                <input type="checkbox"/>
+                                                    <span class="terms">We accept the <a href="https://www.agaportal.de/_Resources/Persistent/3bfd6a43f17d04f9b34d523df323f0a44a9eaa17/ab_fab.pdf"> General Terms and Conditions for Supplier Credit Cover (G) </a> 
+                                                    in connection with the <a href="https://www.agaportal.de/_Resources/Persistent/3bfd6a43f17d04f9b34d523df323f0a44a9eaa17/ab_fab.pdf">Supplementary Provisions for Transfer of Assignments</a></span>
                                             </label>
                                          </div>
                                          <div class="input-field col s12 m12"> 
                                             <label>
-                                                <input type="checkbox" class="filled-in"/>
-                                                <span>We have noted the tips on feeds and charges, guidelines, responsibilites for the application, publication of project data, OECD Guidelines for Multinational Enterprises and UN Guiding Principles on Economic and Human Rights.</span>
+                                                <input type="checkbox"/>
+                                                <span class="terms">We have taken the privacy police  notice and agree to their validity.</span>
+                                            </label>
+                                         </div>
+                                         <div class="input-field col s12 m12"> 
+                                            <label>
+                                                <input type="checkbox"/>
+                                                <span class="terms">We have noted the tips on feeds and charges, guidelines, responsibilites for the application, publication of project data, OECD Guidelines for Multinational Enterprises and UN Guiding Principles on Economic and Human Rights.</span>
                                             </label>
                                          </div>
                                          <div class="input-field col s12 m12"> 
@@ -1847,14 +954,6 @@
                 }              
             })
 
-            /*$(".yes, yes-no-btns ").click(function (e) {
-                $(this).toggleClass("active-btn");
-                $('.no').removeClass("active-btn");
-            });
-            $(".no").click(function (e) {
-                $(this).toggleClass("active-btn");
-                $('.yes').removeClass("active-btn");
-            });*/
 
             function changeTabs(curremt_tab_index) {
                 $('.tab').hide();
