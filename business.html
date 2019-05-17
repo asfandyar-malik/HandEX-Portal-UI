@@ -18,7 +18,8 @@
                         <li class="active" tab_index="1">Business</li>
                         <li tab_index="2">Customer</li>
                         <li tab_index="3">Financing</li>
-                        <li tab_index="4">Finalize</li>
+                        <li tab_index="4">Financing</li>
+                        <li tab_index="5">Finalize</li>
                     </ul>
                 </div>
             </div>
@@ -39,7 +40,7 @@
                             </div>
                             <div class="col s12 m4">
                                 <div class="form-nav">
-                                    <h2>Your Business</h2>
+                                    <h2>Business</h2>
                                 </div>
                             </div>
                             <div class="col s12 m4">
@@ -56,222 +57,29 @@
                                     <div class="col s12">
                                         <div class="form-content">
                                             <div class="row">
-                                                <div class="input-field col s12">
-                                                    <label for="cname">Please describe your products and services</label>
-                                                    <input id="cname" type="text" class="validate"> 
+                                                <div class="input-field col s12 m6">
+                                                    <label>Company Name</label>
+                                                    <input type="text" class="validate"> 
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <label>Euler Hermes' DN-NR</label>
+                                                    <input type="text" class="validate">
                                                 </div>
                                                 <div class="input-field col s12">
-                                                    <label for="dproduct">Are you exporting investment goods?</label>
-                                                    <p><label for="yes"><input type="checkbox" id="yes" name="yes" value="Yes"/><span class="yes">Yes</span></label><label for="no"><input type="checkbox" id="no" name="no" value="no"/><span class="no">No</span></label></p>
+                                                    <label>Address Line 1</label>
+                                                    <input type="text" class="validate">
                                                 </div>
-                                                <div class="input-field col s12">
-                                                    <label for="fgoods">Have you already agreed Incoterms?</label>
-                                                    <p><label for="yes1"><input type="checkbox" id="yes1" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no1"><input type="checkbox" id="no1" name="no" value="no"/><span class="no yes-no-btns">No</span></label></p>
-                                                        <div class="row hide-section">
-                                                        <div class="input-field col s12 m12">
-                                                            <label for="dproduct">IncoTerms</label>
-                                                        </div>
-                                                        <div class="input-field col s12 m6">
-                                                            <select>
-                                                                <option value="CIF(Cost, Insurance and Freight)">CIF(Cost, Insurance and Freight)</option>
-                                                                <option value="CIP (Carriage and Insurance Paid to)">CIP (Carriage and Insurance Paid to)</option>
-                                                                <option value="CFR (Cost and Freight)">CFR (Cost and Freight)</option>
-                                                                <option value="CPT (Carriage paid to)">CPT (Carriage paid to)</option>
-                                                                <option value="DAT (Delivered at Terminal)">DAT (Delivered at Terminal)</option>
-                                                                <option value="DAP (Delivered at Place)">DAP (Delivered at Place)</option>
-                                                                <option value="DDP (Delivery Duty Paid)">DDP (Delivery Duty Paid)</option>
-                                                                <option value=" EXW (Ex Works)"> EXW (Ex Works)</option>
-                                                                <option value="FAS (Free Alongside Ship)">FAS (Free Alongside Ship)</option>
-                                                                <option value="FCA (Free Carrier)">FCA (Free Carrier)</option>
-                                                                <option value="FOB (Free on Board)">FOB (Free on Board)</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
+                                                <div class="input-field col s12 m12">
+                                                    <label>Address Line 1</label>
+                                                    <input type="text" class="validate">
                                                 </div>
-                                                <div class="input-field col s12">
-                                                    <label>Please help us understand your project / transaction better</label>
-                                                    <p style="margin-top:0px;color: #bbb;">How is your customer going to use the machines/goods/facility? Are goods spare parts or new investments? In case you also deliver services (installation, training, etc.) with the goods, please describe those here.</p>
-                                                    <textarea id="project-t" class="materialize-textarea" style="height: 100px;"></textarea>
+                                                <div class="input-field col s12 m4">
+                                                    <label>Post Code</label>
+                                                    <input type="text" class="validate">
                                                 </div>
-                                                <div class="input-field col s12">
-                                                    <label for="fgoods">Are you also delivering services (installation, training, etc.)?</label>
-                                                    <p><label for="yes2"><input type="checkbox" id="yes2" name="yes" value="Yes"/><span class="yes">Yes</span></label><label for="no2"><input type="checkbox" id="no2" name="no" value="no"/><span class="no">No</span></label></p>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label for="dproduct">Please classify your goods and services into one of the following sectors.</label>
+                                                <div class="input-field col s12 m8">
+                                                    <label>Country</label>
                                                     <select>
-                                                        <option value="" selected>Please Select</option>
-                                                        <option value="Bergbau, inkl. Verarbeitung">Bergbau, inkl. Verarbeitung</option>
-                                                        <option value="Erdöl- und Erdgasförderung inkl. Verarbeitung">Erdöl- und Erdgasförderung inkl. Verarbeitung</option>
-                                                        <option value="Chemie">Chemie</option>
-                                                        <option value="Energie">Energie</option>
-                                                        <option value="Infrastruktur">Infrastruktur</option>
-                                                        <option value="Papier- , Holz-, Leder- und Textilindustrie">Papier- , Holz-, Leder- und Textilindustrie</option>
-                                                        <option value="Agrarsektor und Nahrungsmittelindustrie">Agrarsektor und Nahrungsmittelindustrie</option>
-                                                        <option value="Verarbeitende Industrie">Verarbeitende Industrie</option>
-                                                        <option value="Umwelttechnik">Umwelttechnik</option>
-                                                        <option value="Dienstleistungen">Dienstleistungen</option>
-                                                    </select>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label for="fgoods">Please describe your industry/ sector in more detail></label>
-                                                    <textarea id="project-t" class="materialize-textarea" style="height: 100px;"></textarea>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label for="fgoods">Are you delivering your goods as part of a consortium with other companies?</label>
-                                                    <p><label for="yes3"><input type="checkbox" id="yes3" name="yes" value="Yes"/><span class="yes">Yes</span></label><label for="no3"><input type="checkbox" id="no3" name="no" value="no"/><span class="no">No</span></label></p>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label for="fgoods">Are your goods delivered to a sensitive area?</label>
-                                                    <p style="margin-top:0px;color: #bbb;">Sensitive areas are national parks and or areas protected by national or international law as well as regions relevant regional, national or international relevance.</p>
-                                                    <p><label for="no4"><input type="checkbox" id="no4" name="yes" value="No"/><span class="no yes-no-btns">No</span></label><label for="natural4"><input type="checkbox" id="natural4" name="natural4" value="Natural reserve"/><span class="no yes-no-btns">Natural reserve</span></label><label for="relevant4"><input type="checkbox" id="relevant4" name="relevant4" value="Relevant for indigenous people"/><span class="no yes-no-btns">Relevant for indigenous people</span></label><label for="cultural4"><input type="checkbox" id="cultural4" name="cultural4" value="Archaelogical or cultural"/><span class="no yes-no-btns">Archaelogical or cultural</span></label><label for="yes4"><input type="checkbox" id="yes4" name="no" value="Other"/><span class="yes yes-no-btns">Other</span></label></p>
-                                                    <div class="row hide-section">
-                                                        <div class="input-field col s12">
-                                                            <label for="sarea">Please specify to what extent it is a sensitive area</label>
-                                                            <input id="sarea" type="text" class="validate">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label>Is your export transaction subject to export license?</label>
-                                                    <p><label for="yes4"><input type="checkbox" id="yes4" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no4"><input type="checkbox" id="no4" name="no" value="no"/><span class="no yes-no-btns">No</span></label></p>
-                                                    <div class="row hide-section">
-                                                        <div class="input-field col s12">
-                                                            <label for="dproduct">From which regulations or which part / section of the export list does the license requirement arise?</label>
-                                                            <input id="sarea" type="text" class="validate">
-                                                        </div>
-                                                        <div class="input-field col s12 m6">
-                                                            <label for="fgoods">The Export License.</label>
-                                                            <select>
-                                                                <option value="" disabled selected>Please Select</option>
-                                                                <option value="... wurde erteilt.">... wurde erteilt.</option>
-                                                                <option value="... ist beantragt.">... ist beantragt.</option>
-                                                                <option value="... ist noch zu beantragen.">... ist noch zu beantragen.</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label for="fgoods">Are you delivering used goods?</label>
-                                                    <p><label for="yes5"><input type="checkbox" id="yes5" name="yes" value="Yes"/><span class="yes">Yes</span></label><label for="no5"><input type="checkbox" id="no5" name="no" value="no"/><span class="no">No</span></label></p>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label for="parties">Have all parties already signed the contract for the export transaction?</label>
-                                                    <p><label for="yes6"><input type="checkbox" id="yes6" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no6"><input type="checkbox" id="no6" name="no" value="no"/><span class="no yes-no-btns">No</span></label></p>
-                                                    <div class="row hide-section">
-                                                        <div class="input-field col s12 m12">
-                                                            <label for="dproduct">Please indicate the date on signing for the and optionally an internal reference</label>
-                                                        </div>
-                                                        <div class="input-field col s12 m4">  
-                                                            <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
-                                                        </div>
-                                                        <div class="input-field col s12 m8">     
-                                                            <input type="text" class="validate">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label>Do you agree a special contract structure with your contract partner?</label>
-                                                    <p><label for="yes7"><input type="checkbox" id="yes7" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no7"><input type="checkbox" id="no7" name="no" value="no"/><span class="no yes-no-btns">No</span></label></p>
-                                                    <div class="row hide-section">
-                                                        <div class="input-field col s12 m12">
-                                                            <label for="dproduct">Please specify the contract value.</label>
-                                                            <p style="margin-top:0px;color: #bbb;font-style: italic;">Contract currency</p>
-                                                        </div>
-                                                        <div class="input-field col s12 m4">
-                                                            <select>
-                                                                <option value="" disabled selected>Please Select</option>
-                                                                <option value="Euro">Euro</option>
-                                                                <option value="Dollar">Dollar</option>  
-                                                            </select>
-                                                        </div>
-                                                        <div class="input-field col s12 m4">     
-                                                            <input type="text" class="validate">
-                                                        </div>
-                                                        <div class="input-field col s12 m8"> 
-                                                        <p style="margin-top:0px;color: #bbb;font-style: italic;">What is the contract value excl. service (installation, etc.)?</p>    
-                                                            <input type="text" class="validate">
-                                                        </div>
-                                                        <div class="input-field col s12 m8">  
-                                                        <p style="margin-top:0px;color: #bbb;font-style: italic;">What is the share of spare parts in the contract value?</p> 
-                                                            <input type="text" class="validate">
-                                                        </div>
-                                                        <div class="input-field col s12 m12">  
-                                                        <p style="margin-top:0px;color: #bbb;font-style: italic;">In case the contract with your customers contains any other billed items, please specify here.</p> 
-                                                        </div>
-                                                        <div class="input-field col s12 m3">  
-                                                        <select>
-                                                                <option value="" disabled selected>Please Select</option>
-                                                                <option value="Euro">Euro</option>
-                                                                <option value="Dollar">Dollar</option>  
-                                                        </select>
-                                                        <select>
-                                                                <option value="" disabled selected>Please Select</option>
-                                                                <option value="Euro">Euro</option>
-                                                                <option value="Dollar">Dollar</option>  
-                                                        </select>
-                                                        <select>
-                                                                <option value="" disabled selected>Please Select</option>
-                                                                <option value="Euro">Euro</option>
-                                                                <option value="Dollar">Dollar</option>  
-                                                        </select>
-                                                        </div>
-                                                        <div class="input-field col s12 m3">  
-                                                        <input type="text" class="validate" placeholder="Amount">
-                                                        <input type="text" class="validate" placeholder="Amount">
-                                                        <input type="text" class="validate" placeholder="Amount">
-                                                        </div>
-                                                        <div class="input-field col s12 m6">  
-                                                        <input type="text" class="validate" placeholder="Description">
-                                                        <input type="text" class="validate" placeholder="Description">
-                                                        <input type="text" class="validate" placeholder="Description">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label>Have you agreed a price adjustment clause with your customer?</label>
-                                                    <p><label for="yes8"><input type="checkbox" id="yes8" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no8"><input type="checkbox" id="no8" name="no" value="no"/><span class="no yes-no-btns">No</span></label></p>
-                                                    <div class="row hide-section">
-                                                        <div class="input-field col s12 m12">
-                                                            <label for="dproduct">Please describe the details of the billing method (percentage or amount method).</label>
-                                                        </div>
-                                                        <div class="input-field col s12 m12">  
-                                                            <input type="text" class="validate">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label>Are you delivering in multiple shipments?</label>
-                                                    <p><label for="yes9"><input type="checkbox" id="yes9" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no9"><input type="checkbox" id="no9" name="no" value="no"/><span class="no yes-no-btns">No</span></label></p>
-                                                    <div class="row hide-section">
-                                                        <div class="input-field col s12 m12">
-                                                            <label for="dproduct">Please inform us about the delivery and, if applicable, agreed performance dates of your export business.</label>
-                                                        </div>
-                                                        <div class="input-field col s12 m6"> 
-                                                            <p style="margin-top:0px;color: #bbb;font-style: italic;">Start of delivery</p>  
-                                                            <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
-                                                            <input type="text" class="validate" placeholder="Weiterer zahlungsrelevanter Termin">
-                                                            <input type="text" class="validate" placeholder="Weiterer zahlungsrelevanter Termin">
-                                                            <input type="text" class="validate" placeholder="Weiterer zahlungsrelevanter Termin">
-                                                        </div>
-                                                        <div class="input-field col s12 m6">  
-                                                            <p style="margin-top:0px;color: #bbb;font-style: italic;">End of delivery</p> 
-                                                            <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
-                                                            <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
-                                                            <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
-                                                            <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="input-field col s12">
-                                                    <label>Do you receive a German certificate of origin for the goods to be delivered?</label>
-                                                    <p><label for="yes10"><input type="checkbox" id="yes10" name="yes" value="Yes"/><span class="no yes-no-btns">Yes</span></label><label for="no10"><input type="checkbox" id="no10" name="no" value="no"/><span class="yes yes-no-btns">No</span></label><label for="goods10"><input type="checkbox" id="goods10" name="no" value="for parts of goods"/><span class="yes yes-no-btns parts-goods">for parts of goods</span></label></p>
-                                                    <div class="row hide-section">
-                                                        <div class="input-field col s12 m12">
-                                                            <label for="dproduct">Please indicate the deliveries from abroad that are used in your goods.</label>
-                                                        </div>
-                                                        <div class="input-field col s12 m3">  
-                                                            <select>
                                                                 <option value="" disabled selected>Please Select</option>
                                                                 <option value="Mexico">Mexico</option>
                                                                 <option value="Afghanistan">Afghanistan</option>
@@ -473,26 +281,57 @@
                                                                 <option value="Zambia">Zambia</option>
                                                                 <option value="Zimbabwe">Zimbabwe</option>
                                                             </select>
-                                                        </div>
-                                                        <div class="input-field col s12 m3">  
-                                                           <select>
-                                                                <option value="" disabled selected>Please Select</option>
-                                                                <option value="Euro">Euro</option>
-                                                                <option value="Dollar">Dollar</option>
-                                                           </select>
-                                                        </div>
-                                                        <div class="input-field col s12 m6">  
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <label>Tax ID</label>
+                                                    <input type="text" class="validate">
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <label>Date Founded</label>
+                                                    <input type="text" class="datepicker" placeholder="dd/mm/yyyy">
+                                                </div>
+                                                <div class="input-field col s12 m12">
+                                                    <div class="input-field col s12 m6 nopadding">
+                                                        <label>Number of Employees</label>
+                                                        <input type="text" class="validate">
+                                                    </div>
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <label>Revenue (EURm)</label>
+                                                    <input type="text" class="validate">
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <label>Total Assets (in EURm)</label>
+                                                    <input type="text" class="validate">
+                                                </div>
+                                                <div class="input-field col s12 m12">
+                                                    <div class="input-field col s12 m6 nopadding">
+                                                        <label>Date of last fisal year</label>
+                                                        <input type="text" class="validate">
+                                                    </div>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <label>External Rating?</label>
+                                                    <p><label for="no4"><input type="checkbox" id="no4" name="yes" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="natural4"><input type="checkbox" id="natural4" name="natural4" value="Natural reserve"/><span class="no yes-no-btns">No</span></label></p>
+                                                    <div class="row hide-section">
+                                                        <div class="input-field col s12">
+                                                            <label>Rating</label>
                                                             <input type="text" class="validate">
                                                         </div>
-                                                        <div class="input-field col s12 m12">  
-                                                            <label class="business-cert-no">Please explain why these supplies from abroad are necessary.</label>
-                                                            <label  class="business-cert-goods">Why Partly Foreign Rawgoods Necessary.</label>
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Rating Agency</label>
+                                                            <select>
+                                                                <option value="" selected>Please select</option>
+                                                            </select>
                                                         </div>
-                                                        <div class="input-field col s12 m12">  
-                                                            <input type="text" class="validate">
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Date of Rating</label>
+                                                            <input type="text" class="datepicker" placeholder="dd/mm/yyyy">
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -863,9 +702,31 @@
                                 </div>
                             </div>
                         </div>     
-                    
                     <!-- step-3 start -->
                     <div class="step-3 tab"> 
+                        <!--   Form Navigation Section   -->
+                        <div class="row form-nav-top">
+                            <div class="col s12 m4">
+                                <div class="form-nav">
+                                    <p><span> 50% Complete </span></p>
+                                </div>
+                            </div>
+                            <div class="col s12 m4">
+                                <div class="form-nav">
+                                    <h2>Transaction</h2>
+                                </div>
+                            </div>
+                            <div class="col s12 m4">
+                                <div class="form-nav right">
+                                    <a href="#">Save As Draft</a>
+                                    <span class="next" tab_index="4">Next Step</span>
+                                </div>
+                            </div>
+                        </div>
+                        test 3
+                    </div>
+                    <!-- step-3 start -->
+                    <div class="step-4 tab"> 
                         <!--   Form Navigation Section   -->
                         <div class="row form-nav-top">
                             <div class="col s12 m4">
@@ -881,7 +742,7 @@
                             <div class="col s12 m4">
                                 <div class="form-nav right">
                                     <a href="#">Save As Draft</a>
-                                    <span class="next" tab_index="4">Next Step</span>
+                                    <span class="next" tab_index="5">Next Step</span>
                                 </div>
                             </div>
                         </div>
@@ -1519,8 +1380,8 @@
                         </div> 
                     </div>
 
-                    <!-- step-4 start -->
-                    <div class="step-4 tab"> 
+                    <!-- step-5 start -->
+                    <div class="step-5 tab"> 
                         <!--   Form Navigation Section   -->
                         <div class="row form-nav-top">
                             <div class="col s12 m4">
@@ -1986,8 +1847,10 @@
                 $(this).closest(".input-field").find(".hide-section").show();
                 $(".business-cert-no").show();
                 $(".business-cert-goods").hide();
+                $(this).addClass("active-btn");
               }else{
                 $(this).closest(".input-field").find(".hide-section").hide();
+
               }
             });
 

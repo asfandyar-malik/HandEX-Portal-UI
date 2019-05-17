@@ -6468,6 +6468,8 @@ body {
   color: #fff;
   font-weight: 600; }
 
+.form-content .nopadding {
+  padding-left: 0px; }
 .form-content .input-field input[type="submit"] {
   padding: 10px 20px;
   background: #47e1c1;
@@ -6486,7 +6488,7 @@ body {
     height: auto !important; }
   .form-content .input-field label span:before {
     opacity: 0; }
-.form-content .input-field .yes span {
+.form-content .input-field .active-btn span {
   color: #47e1bb; }
 .form-content .input-field input {
   border: 1px solid #dcdcde;
@@ -6498,7 +6500,7 @@ body {
   -moz-box-shadow: inset 0 0 4px #dcdcde;
   -webkit-box-shadow: inset 0 0 4px #dcdcde;
   box-shadow: inset 0 0 4px #dcdcde; }
-.form-content span.yes {
+.form-content span.active-btn {
   color: #47e1bb; }
 .form-content select {
   display: block;
@@ -6570,7 +6572,7 @@ form.col.s12.custom-form {
     .form-progress .progressbar li {
       list-style: none;
       display: inline-block;
-      width: 24.33%;
+      width: 18.33%;
       position: relative;
       text-align: center;
       cursor: pointer;
