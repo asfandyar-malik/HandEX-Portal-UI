@@ -312,7 +312,7 @@
                                                 </div>
                                                 <div class="input-field col s12">
                                                     <label>External Rating?</label>
-                                                    <p><label for="no4"><input type="checkbox" id="no4" name="yes" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="natural4"><input type="checkbox" id="natural4" name="natural4" value="Natural reserve"/><span class="no yes-no-btns">No</span></label></p>
+                                                    <p><label for="no4"><input type="radio" id="no4" name="yes" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="natural4"><input type="radio" id="natural4" name="natural4" value="Natural reserve"/><span class="no yes-no-btns">No</span></label></p>
                                                     <div class="row hide-section">
                                                         <div class="input-field col s12">
                                                             <label>Rating</label>
@@ -331,7 +331,7 @@
                                                     </div>
                                                 </div>
 
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -350,7 +350,7 @@
                             </div>
                             <div class="col s12 m4">
                                 <div class="form-nav">
-                                    <h2>Your Customer</h2>
+                                    <h2>Customer</h2>
                                 </div>
                             </div>
                             <div class="col s12 m4">
@@ -364,26 +364,23 @@
                             <div class="col s12">
                                 <div class="form-content">
                                     <div class="row">
-                                        <div class="input-field col s12">
-                                            <label>Please indicate the address of your customer</label>
+                                        <div class="input-field col s12 m12">
+                                            <label>Company</label>
+                                            <input type="text" class="validate"> 
+                                        </div>
+                                        <div class="input-field col s12 m12">
+                                            <label>Address Line 1</label>
+                                            <input type="text" class="validate"> 
+                                        </div>
+                                        <div class="input-field col s12 m12">
+                                            <label>Address Line 2</label>
+                                            <input type="text" class="validate"> 
                                         </div>
                                         <div class="input-field col s12 m4">
-                                            <label>Company Name</label>
-                                            <input id="company" type="text" class="validate"> 
+                                                    <label>Post Code</label>
+                                                    <input type="text" class="validate">
                                         </div>
-                                        <div class="input-field col s12 m4">
-                                            <label>Street/H.no</label>
-                                            <input id="street" type="text" class="validate"> 
-                                        </div>
-                                        <div class="input-field col s12 m4">
-                                            <label>Postal Code</label>
-                                            <input id="postal" type="text" class="validate"> 
-                                        </div>
-                                        <div class="input-field col s12 m6">
-                                            <label>City</label>
-                                            <input id="city" type="text" class="validate"> 
-                                        </div>
-                                        <div class="input-field col s12 m6">
+                                        <div class="input-field col s12 m8">
                                             <label>Country</label>
                                             <select>
                                                 <option value="" disabled selected>Please Select</option>
@@ -587,116 +584,85 @@
                                                 <option value="Zimbabwe">Zimbabwe</option>
                                             </select>
                                         </div>
+                                        <div class="input-field col s12 m12">
                                         <div class="input-field col s12 m6">
-                                            <label>Rechtsträger-Kennung (Legal Entity Identifier, sofern vorhanden)</label>
-                                            <input id="entity" type="text" class="validate"> 
+                                            <label>Do You Deliver To This Address?</label>
+                                            <p><label for="no4"><input type="radio" id="no4" name="yes" value="No"/><span class="yes">Yes</span></label><label for="natural4"><input type="radio" id="natural4" name="natural4" value="No"/><span class="no">No</span></label></p> 
                                         </div>
-                                        <div class="input-field col s12 m6">
-                                            <label>Handelsregisternummer</label>
-                                            <input id="handle" type="text" class="validate"> 
-                                        </div>
-                                        <div class="input-field col s12 m6">
-                                            <label>Handelsregisterstelle</label>
-                                            <input id="handle1" type="text" class="validate"> 
-                                        </div>
-                                        <div class="input-field col s12 m6">
-                                            <label>Industrie</label>
-                                            <input id="industrie" type="text" class="validate"> 
                                         </div>
                                         <div class="input-field col s12 m12">
-                                            <label>Is the company a subsidiary?</label>
-                                            <p><label for="yes11"><input type="checkbox" id="yes11" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no11"><input type="checkbox" id="no11" name="no" value="no"/><span class="no yes-no-btns">No</span></label></p>
-                                            <div class="row hide-section">
-                                                <div class="input-field col s12 m6">              
-                                                    <label>Mutterkonzern Rechtsträger-Kennung (Legal Entity Identifier, sofern vorhanden)</label>
-                                                    <input type="text" class="validate">
-                                                    <label>Mutterkonzern Gesellschaftsform</label>
-                                                    <input type="text" class="validate">
-                                                    <label>Mutterkonzern Firmenname</label>
-                                                    <input type="text" class="validate">
-                                                    <label>Direktes Mutterunternehmen Gesellschaftsform</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m6">     
-                                                    <label>Direktes Mutterunternehmen Rechtsträger-Kennung (Legal Entity Identifier, sofern vorhanden)</label>
-                                                    <input type="text" class="validate">     
-                                                    <label>Mutterkonzern Industrie</label>
-                                                    <input type="text" class="validate"> 
-                                                    <label>Direktes Mutterunternehmen Firmenname</label>
-                                                    <input type="text" class="validate">
-                                                    <label>Direktes Mutterunternehmen Industrie</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                            </div>
+                                        <div class="input-field col s12 m6">
+                                            <label>Is Your Customer A Public or Private Sector Company?</label>
+                                            <p><label for="pp1"><input type="radio" id="pp1" name="public" value="public"/><span class="yes">Public Sector</span></label><label for="pp2"><input type="radio" id="pp2" name="natural4" value="Private"/><span class="no">Private Sector</span></label></p> 
+                                        </div>
                                         </div>
                                         <div class="input-field col s12 m12">
-                                            <label>External rating available</label>
-                                            <p><label for="yes12"><input type="checkbox" id="yes12" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no12"><input type="checkbox" id="no12" name="no" value="no"/><span class="no yes-no-btns">No</span></label></p>
-                                            <div class="row hide-section">
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Rating Agency</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Rating</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Date of the rating</label>
-                                                    <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
-                                                </div>
-                                            </div>
+                                        <div class="input-field col s12 m6">
+                                            <label>Do You Already Have Payment Experience With Your Customer?</label>
+                                            <p><label for="yes12"><input type="radio" id="yes12" name="public" value="yes"/><span class="yes">Yes</span></label><label for="no12"><input type="radio" id="no12" name="no12" value="no"/><span class="no">No</span></label></p> 
                                         </div>
-                                            <div class="input-field col s12 m12">
-                                                <label>Is your customer a public or private institution?</label>
-                                                <p><label for="yes12"><input type="checkbox" id="yes12" name="yes" value="Private Sector"/><span class="yes">Private Sector</span></label><label for="no12"><input type="checkbox" id="no12" name="no" value="Public Sector"/><span class="no">Public Sector</span></label></p>
-                                            </div>
-                                            <div class="input-field col s12 m12">
-                                                <label>Are you also delivering to this address?</label>
-                                                <p><label for="yes13"><input type="checkbox" id="yes13" name="yes" value="Yes"/><span class="no yes-no-btns">Yes</span></label><label for="no13"><input type="checkbox" id="no13" name="no" value="No"/><span class="yes yes-no-btns">No</span></label></p>
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                            <label>Industry</label>
+                                            <input type="text" class="validate">
+                                        </div>
+                                        <div class="input-field col s12 m6">
+                                            <label>Company Registration Number</label>
+                                            <input type="text" class="validate"> 
+                                        </div>
+                                        <div class="input-field col s12 m12">
+                                        <div class="input-field col s12 m6">
+                                            <label>Tax ID</label>
+                                            <input type="text" class="validate">
+                                        </div>
+                                        </div>
+                                        <div class="input-field col s12">
+                                                    <label>External Rating?</label>
+                                                    <p><label for="ex-yes"><input type="radio" id="ex-yes" name="ex-no" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="ex-no"><input type="radio" id="ex-no" name="ex-no" value="No"/><span class="no yes-no-btns">No</span></label></p>
                                                 <div class="row hide-section">
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Company Name</label>
-                                                    <input type="text" class="validate">
+                                                    <div class="input-field col s12">
+                                                        <label>Rating</label>
+                                                        <input type="text" class="validate">
+                                                    </div>
+                                                    <div class="input-field col s12 m6">
+                                                        <label>Rating Agency</label>
+                                                        <select>
+                                                            <option value="" selected>Please select</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-field col s12 m6">
+                                                        <label>Date of Rating</label>
+                                                        <input type="text" class="datepicker" placeholder="dd/mm/yyyy">
+                                                    </div>
                                                 </div>
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Rating</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Date of the rating</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Date of the rating</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                                <div class="input-field col s12 m4">              
-                                                    <label>Date of the rating</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                            </div>
-                                            </div>
-                                            <div class="input-field col s12 m12">
-                                                <label>Are you invested in your customer in any form and / or are you exercising significant influence over the management?</label>
-                                                <p><label for="yes13"><input type="checkbox" id="yes13" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no13"><input type="checkbox" id="no13" name="no" value="No"/><span class="no yes-no-btns">No</span></label></p>
+                                        </div>
+                                        <div class="input-field col s12">
+                                                    <label>Company Controlled By Another Parent Company?</label>
+                                                    <p><label for="pa-yes"><input type="radio" id="pa-yes" name="pa-yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="pa-no"><input type="radio" id="pa-no" name="pa-no" value="No"/><span class="no yes-no-btns">No</span></label></p>
                                                 <div class="row hide-section">
-                                                <div class="input-field col s12 m12">              
-                                                    <label>Please help us to better understand your investment / participation</label>
-                                                    <input type="text" class="validate">
+                                                    <div class="input-field col s12 m6">
+                                                        <label>Direct Parent Company - Name</label>
+                                                        <input type="text" class="validate">
+                                                    </div>
+                                                    <div class="input-field col s12 m6">
+                                                        <label>Company Is The Ultimate Parent Company?</label>
+                                                        <p><label for="ul-yes"><input type="radio" id="ul-yes" name="ul-yes" value="yes"/><span class="yes">Yes</span></label><label for="ul-no"><input type="radio" id="ul-no" name="ul-no" value="no"/><span class="no">No</span></label></p>
+                                                    </div>
+                                                    <div class="input-field col s12 m6">
+                                                        <label>Direct Parent Company - Legal Form</label>
+                                                        <input type="text" class="validate">
+                                                    </div>
+                                                    <div class="input-field col s12 m6">
+                                                        <label>Industry</label>
+                                                        <select>
+                                                            <option>Please Select</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            </div>
-                                            <div class="input-field col s12 m12">
-                                                <label>Do you already have a payment history with your customer?</label>
-                                                <p><label for="yes13"><input type="checkbox" id="yes13" name="yes" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="no13"><input type="checkbox" id="no13" name="no" value="No"/><span class="no yes-no-btns">No</span></label></p>
-                                                <div class="row hide-section">
-                                                <div class="input-field col s12 m12">              
-                                                    <label>Please describe these in more detail</label>
-                                                    <input type="text" class="validate">
-                                                </div>
-                                            </div>
-                                            </div>
+                                        </div>
+
+
+                                        
                                         </div>
                                     </div>   
                                 </div>
@@ -1397,6 +1363,7 @@
                             <div class="col s12 m4">
                                 <div class="form-nav right">
                                     <a href="#">Save As Draft</a>
+                                    <span class="next">Submit Application</span>
                                 </div>
                             </div>
                         </div>
@@ -1842,15 +1809,17 @@
             $(document).ready(function(){
               $('.datepicker').datepicker();
             });
+
             $(".yes-no-btns").click(function (e) {
+                $(this).toggleClass("active-btn");
               if($(this).hasClass("yes")){
-                $(this).closest(".input-field").find(".hide-section").show();
+                $(this).closest(".input-field").find(".hide-section").toggle();
                 $(".business-cert-no").show();
                 $(".business-cert-goods").hide();
-                $(this).addClass("active-btn");
+                $(this).closest('p').find('.no.yes-no-btns').removeClass("active-btn");
               }else{
                 $(this).closest(".input-field").find(".hide-section").hide();
-
+                $(this).closest('p').find('.yes.yes-no-btns').removeClass("active-btn");
               }
             });
 
@@ -1878,6 +1847,14 @@
                 }              
             })
 
+            /*$(".yes, yes-no-btns ").click(function (e) {
+                $(this).toggleClass("active-btn");
+                $('.no').removeClass("active-btn");
+            });
+            $(".no").click(function (e) {
+                $(this).toggleClass("active-btn");
+                $('.yes').removeClass("active-btn");
+            });*/
 
             function changeTabs(curremt_tab_index) {
                 $('.tab').hide();

@@ -6488,6 +6488,8 @@ body {
     height: auto !important; }
   .form-content .input-field label span:before {
     opacity: 0; }
+  .form-content .input-field label span:after {
+    opacity: 0; }
 .form-content .input-field .active-btn span {
   color: #47e1bb; }
 .form-content .input-field input {
