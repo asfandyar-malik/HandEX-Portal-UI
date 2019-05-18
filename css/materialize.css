@@ -6496,6 +6496,8 @@ body {
     border: 0px !important; }
   .form-content .input-field label .terms:before {
     opacity: 1 !important; }
+.form-content .input-field .custom-area {
+  height: 120px !important; }
 .form-content .input-field .active-btn span {
   color: #47e1bb; }
 .form-content .input-field input {

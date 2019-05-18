@@ -689,7 +689,220 @@
                                 </div>
                             </div>
                         </div>
-                        test 3
+
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="form-content">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <label>Company Name</label>
+                                            <input type="text" class="validate">
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <label>Please Describe Your Industry In More Detail.</label>
+                                            <textarea class="materialize-textarea custom-area" style="height: 120px;"></textarea>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <label>Describe Your Products And/Or Services</label>
+                                            <textarea class="materialize-textarea custom-area" style="height: 120px;"></textarea>
+                                        </div>
+                                        <div class="input-field col s12 m12">
+                                            <div class="input-field col s12 m6 nopadding">
+                                                <label>Are Your Goods, Capital Goods?</label>
+                                                <p><label for="Goods-yes"><input type="radio" id="Goods-yes" name="Goods-yes" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="Goods-no"><input type="radio" id="Goods-no" name="Goods-no" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                            </div>
+                                        </div>
+                                        <div class="input-field col s12 m12">
+                                            <div class="input-field col s12 m6 nopadding">
+                                                <label>Do You Also Provide Services(Assembly, On-Site Training Etc.)?</label>
+                                                <p><label for="pro-service"><input type="radio" id="pro-service" name="pro-service" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="pro-service-no"><input type="radio" id="pro-service-no" name="natural4" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                            </div>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <label>How Would You Categorise The Type Of Goods Your Company Provides?</label>
+                                            <select>
+                                                <option>Please select</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s12 m12">
+                                            <div class="input-field col s12 m6 nopadding">
+                                                <label>Do You Deliver As Part Of An Overall Project Together With Other Companies?</label>
+                                                <p><label for="pro-com"><input type="radio" id="pro-com" name="pro-com" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="pro-com-no"><input type="radio" id="pro-com-no" name="pro-com-no" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                            </div>
+                                        </div>
+                                            <div class="input-field col s12">
+                                                <label>Do Your Deliveries Or Services Affect A Sensitive Area?</label>
+                                                <p>Sensitive Areas Include National Parks And Other Areas Protected By National Or International Las, As Well As Sensitive Areas Of International, National Or Regional Importance.</p>
+                                                <p><label for="your-del"><input type="radio" id="your-del" name="your-del" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="your-del-no"><input type="radio" id="your-del-no" name="your-del-no" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                                <div class="row hide-section">
+                                                        <div class="input-field col s12">
+                                                            <label>What Type Of Area Does It Affect?</label>
+                                                            <select>
+                                                                <option>Please Select</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-field col s12 m12">
+                                                            <label>Please Specify What Kind Of Sensitive Area It is</label>
+                                                            <input type="text" class="validate">
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label>Is Your Export Subject To Export Authorization?</label>
+                                                <p><label for="ex-auth"><input type="radio" id="ex-auth" name="ex-auth" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="ex-auth-no"><input type="radio" id="ex-auth-no" name="ex-auth-no" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                                <div class="row hide-section">
+                                                        <div class="input-field col s12">
+                                                            <label>From Which Regulations?</label>
+                                                            <p>Or Which Part/Section Of The Export List Does The License Requirement Arise?</p>
+                                                            <input type="text" class="validate">
+                                                        </div>
+                                                        <div class="input-field col s12 m12">
+                                                            <label>Please Specify What Kind Of Sensitive Area It is</label>
+                                                            <select>
+                                                                <option>Please Select</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label>Do You Deliver Used Goods?</label>
+                                                <p><label for="used-goods"><input type="radio" id="used-goods" name="used-goods" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="used-goods-no"><input type="radio" id="used-goods-no" name="used-goods-no" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                                <div class="row hide-section">
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Year of initial production</label>
+                                                            <input type="text" class="validate">
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Remaining lifetime of goods</label>
+                                                            <select>
+                                                                <option>Please Select</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <div class="input-field col s12 m6">
+                                                <label>Will the goods get a makeover before reselling?</label>
+                                                <p><label for="used-goods"><input type="radio" id="used-goods" name="used-goods" value="No"/><span class="yes yes-no-btns">Yes</span></label><label for="used-goods-no"><input type="radio" id="used-goods-no" name="used-goods-no" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                                <div class="row hide-section">
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Year of initial production</label>
+                                                            <input type="text" class="validate">
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Remaining lifetime of goods</label>
+                                                            <select>
+                                                                <option>Please Select</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <label>Where will the goods get a makeover?</label>
+                                                    <select>
+                                                        <option>Please select</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label>Have All Parties Already Signed The Contract For The Export Business?</label>
+                                                <p><label for="ex-business"><input type="radio" id="ex-business" name="ex-business" value="Yes"/><span class="yes yes-no-btns">Yes</span></label><label for="ex-business-no"><input type="radio" id="ex-business-no" name="ex-business-no" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                                <div class="row hide-section">
+                                                        <div class="input-field col s12 m12">
+                                                            <label>Please tell us more about the contract</label>
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Date of Signature</label>
+                                                            <input type="text" class="datepicker" placeholder="dd/mm/yyyy">
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Internal Reference ID</label>
+                                                            <input type="text" class="validate">
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label>Have you agreed a special contractual structure involving(i) other supplying parties and/or (ii) special price variation clauses?</label>
+                                                <p><label for="spl-pricecl"><input type="radio" id="spl-pricecl" name="spl-pricecl" value="yes"/><span class="yes yes-no-btns">Yes</span></label><label for="spl-pricecl-no"><input type="radio" id="spl-pricecl-no" name="spl-pricecl-no" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                                <div class="row hide-section">
+                                                        <div class="input-field col s12 m12">
+                                                            <label>Please explain the structure in more detail.</label>
+                                                            <textarea class="materialize-textarea custom-area" style="height: 120px;"></textarea>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label>Do you receive a certificate of origin for your goods?</label>
+                                                <p><label for="certificate-goods"><input type="radio" id="certificate-goods" name="certificate-goods" value="yes"/><span class="no yes-no-btns">Yes</span></label><label for="certificate-goods-no"><input type="radio" id="certificate-goods-no" name="certificate-goods-no" value="No"/><span class="yes yes-no-btns">No</span></label><label for="spl-pricecl-no"><input type="radio" id="certificate-goods-part" name="certificate-goods-part" value="No"/><span class="yes yes-no-btns">Part</span></label></p> 
+                                                <div class="row hide-section">
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Currency</label>
+                                                            <select>
+                                                                <option>Please select</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Amount</label>
+                                                            <input type="text" class="validate" placeholder="€">
+                                                        </div>
+                                                        <div class="input-field col s12 m8">
+                                                            <label>Country</label>
+                                                            <select>
+                                                                <option>Please select</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-field col s12 m12">
+                                                            <label>Please Indicate why supplies from abroad are required</label>
+                                                            <input type="text" class="validate">
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label>Do You Ship Your Goods/Equipment In Multiple Deliveries?</label>
+                                                <p><label for="certificate-origin"><input type="radio" id="certificate-origin" name="certificate-origin" value="yes"/><span class="yes yes-no-btns">Yes</span></label><label for="certificate-origin-no"><input type="radio" id="certificate-origin-no" name="certificate-origin-no" value="No"/><span class="no yes-no-btns">No</span></label></p> 
+                                                <div class="row hide-section">
+                                                        <div class="input-field col s12 m12">
+                                                            <label>Please Inform Us About The Delivery.</label>
+                                                            <p>If Applicable, Delivery Dates Of Your Export Business.</p>
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Start Of Delivery</label>
+                                                            <input type="text" class="datepicker" placeholder="dd/mm/yyyy">
+                                                        </div>
+                                                        <div class="input-field col s12 m6">
+                                                            <label>Delivery End</label>
+                                                            <input type="text" class="datepicker" placeholder="dd/mm/yyyy">
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="input-field col s12 m6">
+                                                <label>Currency</label>
+                                                <select>
+                                                    <option>Please Select</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-field col s12 m6">
+                                                <label>Order Value</label>
+                                                <input type="text" class="validate" placeholder="€">
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <div class="input-field col s12 m6 nopadding">
+                                                <label>What Is The Delivery Value Of The Goods?</label>
+                                                <p>Excl. Other Services(Assembly, Etc.)</p>
+                                                <input type="text" class="validate" placeholder="€">
+                                                </div>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <label>What Is The Share Of Spare Parts In The Delivery Value?</label>
+                                                <input type="text" class="validate">
+                                            </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- step-3 start -->
                     <div class="step-4 tab"> 
