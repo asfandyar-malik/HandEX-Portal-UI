@@ -1,0 +1,158 @@
+.top-nav span {
+    font-size: 14px;
+    font-weight: 600;
+}
+.top-nav .skip {
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+    height: 35px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    padding: 10px 25px;
+    background: transparent;
+    border-radius: 2px;
+}
+.top-nav .next {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    height: 35px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #92a0d9;
+    padding: 10px 25px;
+    background: #92a0d9;
+    border-radius: 2px;
+}
+/*27-06*/
+ul.right.icons li {
+    display: inline-block;
+    padding-left: 20px;
+}
+ul.right.icons li i {
+    color:#8b8e8f;
+}
+
+.top-heder {
+    border-bottom: 1px solid #eee;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.42);
+}
+.row.top-heder {
+    margin-bottom: 0px;
+}
+.row.form-nav-top {
+    margin-bottom: 0px;
+}
+.progress-form .progressbar li:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+    top: 30px;
+    left: 14px;
+    z-index: -1;
+    overflow: hidden;
+}
+.progress-form .progressbar li.active + li:after {
+    background-color: #2541b2;
+}
+.progress-form .progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 0px auto;
+    background-color: #fff;
+    position: absolute;
+    z-index: 999999;
+}
+.progress-form .progressbar li.active:before {
+    border-color: #2541b2;
+    background: #2541b2;
+    color: #fff;
+}
+.progress-form .progressbar li {
+    list-style: none;
+    /* display: inline-block; */
+    width: 50%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    z-index: 99;
+    padding: 20px 0;
+}
+.progress-form .progressbar li.active {
+    color: #47e1bb;
+}
+    .progress-form .m4 {
+    border-right: 1px solid #eee;
+}
+.form-progress .progressbar {
+    counter-reset: step;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 25px;
+    height: 75px;
+    padding: 15px;
+}
+.progressbar li span {
+    color: #ddd;
+    text-transform: uppercase;
+}
+
+.progress-form .progressbar li.active {
+    color: #2541b2;
+        font-weight: 600;
+}
+.progress-form .progressbar li
+{
+  color:#000;
+}
+ul.progressbar p {
+    margin-top: 0px;
+}
+.row.form-nav-top h4 {
+    margin: 0;
+    font-size: 22px;
+    color: #2541b2;
+    text-transform: uppercase;
+}
+form.company.form input {
+    border: 1px solid #ddd;
+    max-width: 550px !important;
+    border-radius: 5px;
+}
+
+form.company.form {
+    padding: 35px;
+}
+::placeholder {
+    color: #000 !important;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+form.company.form select {
+    display: block;
+}
+form.company.form h5 {
+    font-size: 18px;
+}
+.progress-form .m9 {
+    background: #fcfcfd;
+}
+.progress-form .m3:nth-child(1) {
+    border-right: 1px solid #eee;
+}
