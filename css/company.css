@@ -151,9 +151,14 @@ form.company.form {
     background: #fcfcfd;
 }
 .col.s12.m3.border-right {
-    border-right: 1px solid #eee;
+    border-right: 1px solid #1e1e1e;
 }
-form.col.s12.comapny-form {
+
+.col.s12.m9.border-left {
+    border-left: 1px solid #1e1e1e;
+}
+
+form.col.s12.company-form {
     padding: 30px;
 }
 .form-section label {
@@ -234,4 +239,27 @@ textarea#textarea1 {
     color: #fff;
     border-radius: 2px;
     border: 1px solid #eee;
+}
+
+#circle {
+    width: 400px;
+    height: 400px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 200px;
+    background: #81d8f3;
+}
+
+#target{
+    width: 400px;
+    height: 400px;
+    background-color: #81d8f3;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#text{
+    width: 100%;
+    text-align: center;
 }
