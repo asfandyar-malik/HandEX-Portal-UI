@@ -1,0 +1,71 @@
+.right-align-custom {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.outline-card {
+	border: 1px solid blue;
+}
+
+.custom-right-align {
+float: right !important;
+margin-top: 5px;	
+}
+
+.back-icon-positioning {
+	position: relative;
+    top: 9px;
+}
+
+ .tabs .tab a{
+            color:#000;
+ } /*Black color to the text*/
+
+.tabs .tab a:hover {
+            background-color:#eee;
+            color:#000;
+ } /*Text color on hover*/
+
+ .tabs .tab a.active {
+            background-color: white;
+            color:#black;
+ } /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+            background-color:blue;
+ } /*Color of underline*/
+ 
+.tabs .tab a:focus.active {
+  color:black;
+  /*Custom Text Color While Active*/
+  background-color: white;
+  /*Custom Background Color While Active*/
+}
+
+.custom-margin-right {
+	margin-right: 25px;
+}
+
+.custom-equal-left-right-margin {
+	margin-left: 20px;
+    margin-right: 20px;
+}	
+
+.align-center {
+	text-align: center;
+}
+
+.margin-left-100 {
+	font-weight: bold; margin-left: 100px;
+}
+
+.padding-left-right-30 {
+	padding-left: 30px;
+    padding-right: 30px;
+}	
+
+.body-background {
+	background-color: white;
+}
+	
