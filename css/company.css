@@ -1,3 +1,7 @@
+.form-section {
+    height: 1000px;
+}
+
 .top-nav span {
     font-size: 14px;
     font-weight: 600;
@@ -90,29 +94,29 @@ ul.right.icons li i {
     cursor: pointer;
     color: #fff;
     z-index: 99;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 .progress-form .progressbar li.active {
     color: #47e1bb;
 }
-  
+
 .progress-form .progressbar {
     counter-reset: step;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
-    margin-top: 25px;
+    margin-top: 0;
     height: 75px;
-    padding: 15px;
+    /*padding: 15px;*/
 }
 .progressbar li span {
-    color: #ddd;
+    color: #cbcbcb;
     text-transform: uppercase;
 }
 
 .progress-form .progressbar li.active {
     color: #2541b2;
-        font-weight: 600;
+    font-weight: 600;
 }
 .progress-form .progressbar li
 {
@@ -128,7 +132,7 @@ ul.progressbar p {
     text-transform: uppercase;
 }
 .form-section .input-field input , .form-section .input-field textarea {
-    border: 1px solid #ddd;
+   border: 1px solid #ddd;
    border-radius: 3px;
 
 }
@@ -162,10 +166,9 @@ form.company.form {
     padding: 30px;
 }
 .form-section label {
-   
     color: #333;
     font-weight: 600;
-   top: -5px;
+    top: -5px;
     position:relative;
 }
 /*euler28-06*/
@@ -223,7 +226,7 @@ textarea#textarea1 {
     background: #fff !important;
 }
 [type="checkbox"].filled-in:checked + span:not(.lever):after {
-    
+
     border: 2px solid #2541b2 !important;
     background-color: #2541b2 !important;
     }
@@ -255,4 +258,10 @@ textarea#textarea1 {
     text-align: center;
     color: white;
     font-size: 50px;
+    align-content: center;
+}
+
+.horizontal-line {
+    border-left: 2px solid #a6a8ac;
+    height: 800px;
 }
