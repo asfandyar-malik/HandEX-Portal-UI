@@ -43,10 +43,10 @@
 
             <div class="progress-form">
                 <div class="row">
-                    <div class="col m3">
+                    <div class="col m2">
                         <div class="tab-section">
                             <ul class="progressbar">
-                                <li class="active" tab_index="1"><p><span>Schritt 1</span><br>Deklarationen</p></li>
+                                <li tab_index="1"><p><span>Schritt 1</span><br>Deklarationen</p></li>
                                 <li tab_index="2"><p><span>Schritt 2</span><br>In Prüfung</p></li>
                                 <li tab_index="3"><span>Schritt 3</span><br>
                                     <p> Weitere Daten erforderlich </p></li>
@@ -55,7 +55,7 @@
                                     <p> KYC / Geldwäscheprüfung </p></li>
                                 <li tab_index="6"><p><span>Schritt 6</span><br> Finaler Liefervertrag </p></li>
                                 <li tab_index="7"><p><span>Schritt 7</span><br>
-                                    <p>  Verträge unterzeichnen </p></li>
+                                    <p> Verträge unterzeichnen </p></li>
                                 <li tab_index="8"><p><span>Schritt 8</span><br> Auszahlung </p></li>
                             </ul>
                         </div>
@@ -65,11 +65,12 @@
 
                     <div class="col m8" style="">
                         <div class="tab-content">
+
                             <div class="step-1 tab">
                                 <form class="declaration-section">
                                     <div class="row">
                                         <div class="col s12">
-                                            <p class="center-align"> Um mit der Bearbeitung Ihres Antrages beginnen zu
+                                            <p> Um mit der Bearbeitung Ihres Antrages beginnen zu
                                                 können, brauchen wir noch
                                                 digitale
                                                 Unterschriften von Ihnen für Deklarationen </p>
@@ -135,65 +136,42 @@
                             </div>
 
                             <div class="step-2 tab">
-                                <form class="col s12 company-form center-align">
+                                <form class="col s12 company-form">
 
                                     <br><br>
-                                    <p> Aktuell prüfen wir gemeinsam mit Hermes und Finanzierungspartner Ihren
-                                        Antrag! </p>
+                                    <div class="col s8 center-align">
+                                        <p> Aktuell prüfen wir gemeinsam mit Hermes und Finanzierungspartner Ihren
+                                            Antrag! </p>
 
-                                    <p><b> VERBLEIBENDE BEARBEITUNGSZEIT</b></p>
-                                    <br><br>
-
-
-                                    <div class="col s8 offset-s4" id="target">
-                                        <div id="text">5 Tage</div>
+                                        <p><b> VERBLEIBENDE BEARBEITUNGSZEIT</b></p>
+                                        <br><br>
                                     </div>
 
-                                    <!--                                    <div class="row">-->
-                                    <!--                                        <div class="input-field col s12 m4">-->
-                                    <!--                                            <label for="commercial_number">Commercial Register Number</label>-->
-                                    <!--                                            <input placeholder="" id="commercial_number" type="text"-->
-                                    <!--                                                   class="validate">-->
-                                    <!--                                        </div>-->
-                                    <!--                                        <div class="input-field col s12 m3">-->
-                                    <!--                                            <label for="date_reg">Date of Registration</label>-->
-                                    <!--                                            <input type="text" class="datepicker" placeholder="DD/MM/YYYY">-->
-                                    <!--                                        </div>-->
-                                    <!--                                    </div>-->
-
-                                    <!--                                    <div class="row">-->
-                                    <!--                                        <div class="input-field col s12 m3">-->
-                                    <!--                                            <label for="country">Last Fiscal Year</label>-->
-                                    <!--                                            <select>-->
-                                    <!--                                                <option value="" disabled selected>Please Select...</option>-->
-                                    <!--                                                <option value="1">Option 1</option>-->
-                                    <!--                                                <option value="2">Option 2</option>-->
-                                    <!--                                                <option value="3">Option 3</option>-->
-                                    <!--                                            </select>-->
-                                    <!--                                        </div>-->
-                                    <!--                                    </div>-->
+                                    <div class="col s8 offset-s2" id="target">
+                                        <div id="text">5 Tage</div>
+                                    </div>
                                 </form>
                             </div>
 
                             <div class="step-3 tab">
                                 <form class="euler-section">
-                                    <div class="row center-align">
+                                    <div class="row">
 
                                         <p> Wir benötigen weitere Daten von Ihnen: </p>
                                         <br><br>
 
                                         <div class="input-field col s6 m6">
-                                            <label for="commercial_number">Commercial Register Number</label>
+                                            <label for="commercial_number">[field 1]</label>
                                             <input placeholder="" id="commercial_number" type="text"
                                                    class="validate">
                                         </div>
                                         <div class="input-field col s6 m6">
-                                            <label for="date_reg">Date of Registration</label>
+                                            <label for="date_reg">[field 2]</label>
                                             <input type="text" class="datepicker" placeholder="DD/MM/YYYY">
                                         </div>
                                     </div>
 
-                                    <div class="row center-align">
+                                    <div class="row">
                                         <div class="col s12 m6" style="display: block;">
                                             <br>
                                             <p><b>Jahresabschluss letztes Geschäftsjahr</b></p>
@@ -299,50 +277,53 @@
                             <div class="step-6 tab">
                                 <form class="export-contract-section">
                                     <div class="row">
-                                        <p>Bitte laden Sie den endverhandeleten Liefervertrag und/oder Ihre AGBs
-                                            inklusive finaler Bestellung hoch. </p>
-                                        <br><br>
-
-                                        <div class="col s12 m6" style="display: block;">
-                                            <br>
-                                            <p><b>Liefervertrag (aktueller Entwurf, sofern verfügbar)</b></p>
+                                        <div class="col s12">
+                                            <p>Bitte laden Sie den endverhandeleten Liefervertrag und/oder Ihre AGBs
+                                                inklusive finaler Bestellung hoch. </p>
                                             <br><br>
-                                            <div class="file-field">
-                                                <div class="btn handex-btn z-depth-0">
-                                                    <span>Hochladen</span>
-                                                    <input type="file">
-                                                </div>
-                                                <div class="file-path-wrapper">
-                                                    <input class="file-path validate" type="text" placeholder=""
-                                                           value="">
+
+                                            <div class="col s12 m6" style="display: block;">
+                                                <br>
+                                                <p><b>Liefervertrag (aktueller Entwurf, sofern verfügbar)</b></p>
+                                                <br><br>
+                                                <div class="file-field">
+                                                    <div class="btn handex-btn z-depth-0">
+                                                        <span>Hochladen</span>
+                                                        <input type="file">
+                                                    </div>
+                                                    <div class="file-path-wrapper">
+                                                        <input class="file-path validate" type="text" placeholder=""
+                                                               value="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="col s12 m6" style="display: block;">
-                                            <br>
-                                            <p><b> Bonitätsauskunft über den Kunden (sofern verfügbar) </b></p>
-                                            <br><br>
-                                            <div class="file-field">
-                                                <div class="btn handex-btn z-depth-0">
-                                                    <span>Hochladen</span>
-                                                    <input type="file">
-                                                </div>
-                                                <div class="file-path-wrapper">
-                                                    <input class="file-path validate" type="text" placeholder=""
-                                                           value="">
+                                            <div class="col s12 m6" style="display: block;">
+                                                <br>
+                                                <p><b> Bonitätsauskunft über den Kunden (sofern verfügbar) </b></p>
+                                                <br><br>
+                                                <div class="file-field">
+                                                    <div class="btn handex-btn z-depth-0">
+                                                        <span>Hochladen</span>
+                                                        <input type="file">
+                                                    </div>
+                                                    <div class="file-path-wrapper">
+                                                        <input class="file-path validate" type="text" placeholder=""
+                                                               value="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="input-field col s12 m12">
-                                            <br><br><br><br>
-                                            <p>
-                                                <label>
-                                                    <input type="checkbox" class="filled-in"/>
-                                                    <span>Hiermit bestätigen wir, dass die gemachten Angaben und bereitgestellten Dokument der Wahrheit entsprechen und es keine weiteren Nebenabreden mit dem Kunden gibt. </span>
-                                                </label>
-                                            </p>
+                                            <div class="input-field col s12 m12">
+                                                <br><br><br><br>
+                                                <p>
+                                                    <label>
+                                                        <input type="checkbox" class="filled-in"/>
+                                                        <span>Hiermit bestätigen wir, dass die gemachten Angaben und bereitgestellten Dokument der Wahrheit entsprechen und es keine weiteren Nebenabreden mit dem Kunden gibt. </span>
+                                                    </label>
+                                                </p>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -352,7 +333,8 @@
                             <div class="step-7 tab">
                                 <form class="hermes-section">
                                     <div class="row center-align">
-                                        <p> Die Verträge sind nun bereit zur digitalen Unterschrift mittels DocuSign. Bitte geben Sie die Personen an welche die Verträge überprüfen und
+                                        <p> Die Verträge sind nun bereit zur digitalen Unterschrift mittels DocuSign.
+                                            Bitte geben Sie die Personen an welche die Verträge überprüfen und
                                             unterzeichnen sollen </p>
                                         <br>
                                         <div class="col-m8 offset-m2">
@@ -369,7 +351,7 @@
                                             <th>Name</th>
                                             <th>Rolle</th>
                                             <th>Email Adresse</th>
-                                            <th>Status Email-Einladung </th>
+                                            <th>Status Email-Einladung</th>
                                             <th>Status Unterschrift</th>
                                         </tr>
 
@@ -398,8 +380,10 @@
                                 <form class="payment-section">
                                     <div class="row">
 
-                                        <p> Wie vertraglich vereinbart erfolgt die Auszahlung an Sie gegen Vorlage der vereinbarten Dokumente. Hier sehen Sie die geplanten Termine und
-                                            können die Dokumente hochladen. Nach Prüfung der Dokumente erfolgt die Auszahlung. </p>
+                                        <p> Wie vertraglich vereinbart erfolgt die Auszahlung an Sie gegen Vorlage der
+                                            vereinbarten Dokumente. Hier sehen Sie die geplanten Termine und
+                                            können die Dokumente hochladen. Nach Prüfung der Dokumente erfolgt die
+                                            Auszahlung. </p>
 
                                         <br><br><br>
 
@@ -408,7 +392,7 @@
                                                 <th>Meilenstein</th>
                                                 <th>Geplanter Termin</th>
                                                 <th>Dokument / Nachweis</th>
-                                                <th>Auszahlung </th>
+                                                <th>Auszahlung</th>
                                                 <th>Datum der Auszahlung</th>
                                             </tr>
 
@@ -421,11 +405,11 @@
                                             </tr>
 
                                             <tr>
-                                                <td> Abnahme </td>
-                                                <td> 15.12.2019 </td>
-                                                <td> p.muller@test.de </td>
-                                                <td> Offen </td>
-                                                <td> 17.10.2020 </td>
+                                                <td> Abnahme</td>
+                                                <td> 15.12.2019</td>
+                                                <td> p.muller@test.de</td>
+                                                <td> Offen</td>
+                                                <td> 17.10.2020</td>
                                             </tr>
                                         </table>
                                         <br><br>

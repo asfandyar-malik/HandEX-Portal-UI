@@ -88,7 +88,7 @@ ul.right.icons li i {
 .progress-form .progressbar li {
     list-style: none;
     /* display: inline-block; */
-    width: 65%;
+    /*width: 65%;*/
     position: relative;
     text-align: center;
     cursor: pointer;
@@ -264,4 +264,5 @@ textarea#textarea1 {
 .horizontal-line {
     border-left: 2px solid #a6a8ac;
     height: 800px;
+    width: 10px;
 }
