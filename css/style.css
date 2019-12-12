@@ -521,66 +521,6 @@ nav ul a:hover {
 	background-position: center center;
 }
 
-/* line 516, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.clock-icon {
-	background-image: url(/assets/Clock-Icon-61f496e445b05ac09646a92cd17639a02391dce6e13177d664549d1a823af8ab.svg);
-}
-
-/* line 520, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.import-icon {
-	background-image: url(/assets/Import-Icon-c26ec574aa27fcb1b783e4dff47d12a9347127e1fe3a1ce8e49509342a078803.svg);
-}
-
-/* line 524, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.box-icon {
-	background-image: url(/assets/Box-Icon-68c19109fab9dd4bdaba1c54a6fb3bf9cd8b4e0bb13b87452197116eebbc8810.svg);
-}
-
-/* line 528, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.money-icon {
-	background-image: url(/assets/Money-Icon-f78c7b644bc2c5a4d0646a7bb6b4ac1eac01f9138eb38bf4cf08eac17bad1279.svg);
-}
-
-/* line 532, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.notification-icon {
-	background-image: url(/assets/Notification-Icon-8dab8fc5ac7f6d08019f13ca6e9f831355f2259436a6f3dc32dec7de052735f2.svg);
-}
-
-/* line 536, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.reciept-icon {
-	background-image: url(/assets/reciept-icon-24badc4d71d0fe48f33fb402b6d01aff267e6bfbd9e84a22e1f8953f327c365a.svg);
-}
-
-/* line 540, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.send-icon {
-	background-image: url(/assets/Send-Icon-54f30a17b2dda1051b5fa146532029ef31bbbfd5632010c34fff432150c1f09f.svg);
-}
-
-/* line 544, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.settings-icon {
-	background-image: url(/assets/Settings-Icon-3022ca3708d0be0bdb154eaa692632d478b1d62ffd7f51a9e7e1272e75ed645b.svg);
-}
-
-/* line 548, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.sports-01 {
-	background-image: url(/assets/sports-01-03569d41310bfdd82a6bbee2502d800871c8acc9ecbce00ae0ae6e7c1e3f134f.svg);
-}
-
-/* line 552, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.user-icon {
-	background-image: url(/assets/User-Icon-888aded308609ba98ba17ffb76238d8e56d07d9b9642c42c64dad6fc7c6f27a0.svg);
-}
-
-/* line 556, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.check-icon {
-	background-image: url(/assets/Check-Icon-dfa8ba0002aa7462aba53f54b3b0035855612f11689bd336c65522b56aca16fb.svg);
-}
-
-/* line 560, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
-.reciept-icon-white {
-	background-image: url(/assets/reciept-icon-white-d2b4cd937fa9b3beece9ef273353bf93983ff9ed524a6c2f4e3cdd058032aa8d.svg);
-}
-
 /* line 564, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .card.big-choice-card {
 	margin: auto;

@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4454127f-7f46-458d-bfcb-88dce6676956" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/business.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company.html" beforeDir="false" afterPath="$PROJECT_DIR$/company.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/company.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/company.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +54,35 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< Updated upstream
+    <state x="2561" y="289" width="704" height="526" key="find.popup" timestamp="1576159642931">
+      <screen x="0" y="27" width="5760" height="1053" />
+    </state>
+    <state x="2561" y="289" width="704" height="526" key="find.popup/0.27.5760.1053@0.27.5760.1053" timestamp="1576159642931" />
+=======
+    <state x="2608" y="357" width="601" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576067729540">
+      <screen x="0" y="27" width="5760" height="1053" />
+    </state>
+    <state x="2608" y="357" width="601" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.5760.1053@0.27.5760.1053" timestamp="1576067729540" />
+    <state x="2561" y="289" width="704" height="526" key="find.popup" timestamp="1576152336228">
+      <screen x="0" y="27" width="5760" height="1053" />
+    </state>
+    <state x="2561" y="289" width="704" height="526" key="find.popup/0.27.5760.1053@0.27.5760.1053" timestamp="1576152336228" />
+>>>>>>> Stashed changes
     <state x="2577" y="253" width="672" height="677" key="run.anything.popup" timestamp="1576065064585">
       <screen x="0" y="27" width="5760" height="1053" />
     </state>
     <state x="2577" y="253" width="672" height="677" key="run.anything.popup/0.27.5760.1053@0.27.5760.1053" timestamp="1576065064585" />
+<<<<<<< Updated upstream
+    <state x="2577" y="198" width="672" height="676" key="search.everywhere.popup" timestamp="1576158773034">
+      <screen x="0" y="27" width="5760" height="1053" />
+    </state>
+    <state x="2577" y="198" width="672" height="676" key="search.everywhere.popup/0.27.5760.1053@0.27.5760.1053" timestamp="1576158773034" />
+=======
+    <state x="2576" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576067731981">
+      <screen x="0" y="27" width="5760" height="1053" />
+    </state>
+    <state x="2576" y="257" width="672" height="678" key="search.everywhere.popup/0.27.5760.1053@0.27.5760.1053" timestamp="1576067731981" />
+>>>>>>> Stashed changes
   </component>
 </project>

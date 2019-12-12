@@ -31,22 +31,20 @@
                 </div>
             </div>
 
-            <div class="row top-heder">
-                <br>
-                <div class="col s4 m3">
-                    <h6> INDIKATIVE ANGEBOTE</h6>
-                    <br>
-                </div>
-                <div class="col s4 m3">
-                    <h6> ANTRÄGE</h6>
-                </div>
-                <div class="col s4 m3">
-                    <h6> ABGESCHLOSSENE TRANSAKTIONEN</h6>
-                </div>
 
-                <div class="top-nav right">
-                    <button class="skip" tab_index="2">Skip</button>
-                    <button class="next" tab_index="2">Next Step</button>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs tab-demo z-depth-1">
+                        <li class="tab col s3"><a href="#test1" class="active grey-text">INDIKATIVE ANGEBOTE</a></li>
+                        <li class="tab col s3"><a class="active grey-text" href="#test2">ANTRÄGE</a></li>
+                        <li class="tab col s3"><a href="#test3" class="active grey-text">ABGESCHLOSSENE
+                            TRANSAKTIONEN</a></li>
+
+                        <div class="top-nav right">
+                            <button class="skip" tab_index="2">Skip</button>
+                            <button class="next" tab_index="2">Next Step</button>
+                        </div>
+                    </ul>
                 </div>
             </div>
 
@@ -73,41 +71,21 @@
                             <div class="step-1 tab">
                                 <form class="col s12 company-form">
 
-                                    <p> Aktuell prüfen wir gemeinsam mit Hermes und Finanzierungspartner Ihren Antrag! </p>
+                                    <p> Aktuell prüfen wir gemeinsam mit Hermes und Finanzierungspartner Ihren
+                                        Antrag! </p>
 
-                                    <p> <b> VERBLEIBENDE BEARBEITUNGSZEIT</b></p>
+                                    <p><b> VERBLEIBENDE BEARBEITUNGSZEIT</b></p>
 
                                     <div id="target">
-                                        <div id="text">5 Tage </div>
+                                        <div id="text">5 Tage</div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="input-field col s12 m4">
-                                            <label for="number_of employee"> Number of Employee</label>
-                                            <select>
-                                                <option value="" disabled selected>Please Select...</option>
-                                                <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
-                                                <option value="3">Option 3</option>
-                                            </select>
-                                        </div>
-                                        <div class="input-field col s12 m3">
-                                            <label for="year-founded">Year Founded</label>
-                                            <input placeholder="" id="year-founded" type="text" class="validate">
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="input-field col s12 m3">
-                                            <label for="legal-form">Legal Form</label>
-                                            <input placeholder="" id="Legal_form" type="text" class="validate">
-                                        </div>
-                                    </div>
 
                                     <div class="row">
                                         <div class="input-field col s12 m4">
                                             <label for="commercial_number">Commercial Register Number</label>
-                                            <input placeholder="" id="commercial_number" type="text" class="validate">
+                                            <input placeholder="" id="commercial_number" type="text"
+                                                   class="validate">
                                         </div>
                                         <div class="input-field col s12 m3">
                                             <label for="date_reg">Date of Registration</label>
@@ -148,50 +126,6 @@
                                             <input placeholder="" id="dn-nr" type="text" class="validate">
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="input-field col s12 m7">
-                                            <label for="country">Did your company file for insolvency or were your
-                                                assets the target of legal enforcement due to liquidity related issues
-                                                in the last 5 years?</label>
-                                            <p>
-                                                <span class="yes">Yes</span>
-                                                <span class="no">No</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12 m7">
-                                            <label for="country">Where your company or its administrators
-                                                investigated,sued or sentenced for financial fraud/crime in the past 5
-                                                years?</label>
-                                            <p>
-                                                <span class="yes" id="Hyes">Yes</span>
-                                                <span class="no" id="Hno">No</span>
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="input-field col s12 m7">
-                                            <label for="country">Does your company conduct business with any sanctioned
-                                                country?</label>
-                                            <p>
-                                                <span class="yes" onclick="conductBusiness()" id="Hyes1">Yes</span>
-                                                <span class="no" onclick="noconductBusiness()" id="Hno1">No</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row which-one" id="business" style="display: none;">
-                                        <div class="input-field col s12 m6">
-                                            <label for="country">Which one?</label>
-                                            <select>
-                                                <option value="" disabled selected>Please Select...</option>
-                                                <option value="1">Option 1</option>
-                                                <option value="2">Option 2</option>
-                                                <option value="3">Option 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
                                 </form>
                             </div>
 
@@ -202,7 +136,8 @@
                                             <div class="input-field col s12 m7">
                                                 <label for="shareholder_name">Shareholder's Name and
                                                     shareholding</label>
-                                                <p class="light-test">Please list your current share holders and their
+                                                <p class="light-test">Please list your current share holders and
+                                                    their
                                                     participation within the company?</p>
                                             </div>
                                         </div>
@@ -213,7 +148,8 @@
                                             </div>
                                             <div class="input-field col s12 m6">
                                                 <label for="participation">Participation</label>
-                                                <input placeholder="" id="participation" type="text" class="validate">
+                                                <input placeholder="" id="participation" type="text"
+                                                       class="validate">
                                             </div>
                                         </div>
                                         <a class="waves-effect waves-light btn-small">add another</a>
@@ -231,7 +167,8 @@
                                                 <div class=" input-field col s12 m12 another">
                                                     <div class="input-field col s12 m6">
                                                         <label for="name">Name</label>
-                                                        <input placeholder="" id="name" type="text" class="validate">
+                                                        <input placeholder="" id="name" type="text"
+                                                               class="validate">
                                                     </div>
                                                     <div class="input-field col s12 m6">
                                                         <label for="participation">Participation</label>
@@ -245,8 +182,10 @@
                                         </div>
                                         <div class="input-field col s12 m12">
                                             <div class="input-field col s12 m12">
-                                                <label for="country">Is one of your legal representatives(MD's, etc) or
-                                                    shareholders running for a political office ("Politisch Exponierte
+                                                <label for="country">Is one of your legal representatives(MD's, etc)
+                                                    or
+                                                    shareholders running for a political office ("Politisch
+                                                    Exponierte
                                                     Personen")?</label>
                                                 <p>
                                                     <span class="yes" onclick="politicaloffice()" id="H3">Yes</span>
@@ -404,9 +343,8 @@
                                 <form class="signed-contract-section">
                                     <div class="row">
                                         <div class="input-field col s12 m6">
-                                            <label for="first_name"> Placeholder</label>
-                                            <input placeholder="Placeholder" id="company_name"
-                                                   type="text" class="validate">
+                                            <label> Placeholder</label>
+                                            <input type="text" class="validate">
                                         </div>
                                     </div>
                                 </form>
@@ -416,14 +354,12 @@
                                 <form class="payment-section">
                                     <div class="row">
                                         <div class="input-field col s12 m6">
-                                            <label for="first_name"> Placeholder</label>
-                                            <input placeholder="Placeholder" id="company_name"
-                                                   type="text" class="validate">
+                                            <label > Placeholder</label>
+                                            <input type="text" class="validate">
                                         </div>
                                     </div>
                                 </form>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -431,7 +367,6 @@
         </div>
     </div>
 </div>
-
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
