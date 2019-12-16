@@ -3,13 +3,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>HandEX</title>
+    <title>handex</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/company.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/indicative-offers.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
@@ -36,89 +34,82 @@
                     <li class="top-nav left">
                         <p style="margin-left: 1.2em;"><b> Antrag [Produkt][Importeur][(Land)]</b></p>
                     </li>
-                    <li class="top-nav right top-">
-                        <button style="margin-top: 0.65em;" class="next" tab_index="2">Zurück</button>
+                    <li class="top-nav right">
+                        <a style="margin-top: 0.5em;" class="btn handex-btn" href="overviewExporterPortal.html">
+                            Zurück </a>
                     </li>
                 </ul>
             </div>
 
+            <div class="form-content">
+                <br><br>
+                <div class="row">
 
-            <div id="test1" class="col s12">
-                <br/>
-                <br/>
-                <div class="form-content">
-                    <div class="row">
-
-                        <form class="col s10 m10 offset-m1 ">
-                            <div class="row padding-left-right-30">
-                                <div class="input-field col s4">
-                                    <label class="active black-text">Firmenname</label>
-                                    <input id="field1" type="text" class="validate">
-                                </div>
-                                <div class="input-field col s4">
-                                    <label class="active black-text">Land</label>
-                                    <select>
-                                        <option value="" disabled selected>Bitte auswählen ...</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                    </select>
-                                </div>
-                                <div class="input-field col s4">
-                                    <label class="active black-text">Adresse</label>
-                                    <input id="field1" type="text" class="validate">
-                                </div>
+                    <form class="col s10 m10 offset-m1 ">
+                        <div class="row padding-left-right-30">
+                            <div class="input-field col s4">
+                                <label class="active black-text">Firmenname</label>
+                                <input id="field1" type="text" class="validate">
                             </div>
-
-                            <div class="row padding-left-right-30">
-                                <div class="input-field col s4">
-                                    <label class="active black-text">Auftragswert</label>
-                                    <input id="field1" type="text" class="validate">
-                                </div>
-                                <div class="input-field col s4">
-                                    <label class="active black-text">Warenart</label>
-                                    <select>
-                                        <option value="" disabled selected>Bitte auswählen...</option>
-                                        <option value="1">Option 1</option>
-                                        <option value="2">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                    </select>
-                                </div>
-                                <div class="input-field col s4">
-                                    <label class="active black-text">Produktions- & Lieferzeit</label>
-                                    <input id="field1" type="text" class="validate">
-                                </div>
+                            <div class="input-field col s4">
+                                <label class="active black-text">Land</label>
+                                <select>
+                                    <option value="" disabled selected>Bitte auswählen ...</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
                             </div>
-
-                            <div class="row padding-left-right-30">
-                                <div class="input-field col s4">
-                                    <label class="active black-text">Anzahlung</label>
-                                    <input id="field1" type="text" class="validate">
-                                </div>
-                                <div class="input-field col s4">
-                                    <label class="active black-text">Gewünschte finanzierungslaufzeit</label>
-                                    <input id="field1" type="text" class="validate">
-                                </div>
-                                <div class="input-field col s4">
-                                    <label class="active black-text">Gewünschtes Tilgungsprofil</label>
-                                    <input id="field1" type="text" class="validate">
-                                </div>
+                            <div class="input-field col s4">
+                                <label class="active black-text">Adresse</label>
+                                <input id="field1" type="text" class="validate">
                             </div>
+                        </div>
 
-                        </form>
-                    </div>
-                </div>
+                        <div class="row padding-left-right-30">
+                            <div class="input-field col s4">
+                                <label class="active black-text">Auftragswert</label>
+                                <input id="field1" type="text" class="validate">
+                            </div>
+                            <div class="input-field col s4">
+                                <label class="active black-text">Warenart</label>
+                                <select>
+                                    <option value="" disabled selected>Bitte auswählen...</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="input-field col s4">
+                                <label class="active black-text">Produktions- & Lieferzeit</label>
+                                <input id="field1" type="text" class="validate">
+                            </div>
+                        </div>
 
-                <div class="align-center">
-                    <a class="waves-effect waves-light btn-small">Angebot generieren</a>
+                        <div class="row padding-left-right-30">
+                            <div class="input-field col s4">
+                                <label class="active black-text">Anzahlung</label>
+                                <input id="field1" type="text" class="validate">
+                            </div>
+                            <div class="input-field col s4">
+                                <label class="active black-text">Gewünschte finanzierungslaufzeit</label>
+                                <input id="field1" type="text" class="validate">
+                            </div>
+                            <div class="input-field col s4">
+                                <label class="active black-text">Gewünschtes Tilgungsprofil</label>
+                                <input id="field1" type="text" class="validate">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
 
-            <div id="test2" class="col s12"></div>
-
-            <div id="test3" class="col s12"></div>
-
+            <div class="align-center">
+                <a style="margin-top: 0.5em;" class="btn handex-btn" href="indicativeOfferResponse.html" > Angebot generieren </a>
+            </div>
         </div>
+
+
     </div>
 </div>
 <br/>
@@ -134,7 +125,7 @@
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>-->
 
 </body>
 </html>
