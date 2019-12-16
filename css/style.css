@@ -83,7 +83,7 @@ body .form-section .form-content {
 }
 /* line 91, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-content .input-field .active-btn span {
-	color: #4261a1;
+	color: #1565C0;
 }
 /* line 96, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-content .input-field input {
@@ -97,13 +97,13 @@ body .form-section .form-content {
 }
 /* line 111, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-content span.active-btn {
-	background-color: #4261a1;
+	background-color: #1565C0;
 	color: white;
 }
 /* line 115, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-content span.active-btn:hover {
 	background-color: white;
-	color: #4261a1;
+	color: #1565C0;
 }
 /* line 120, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-content select {
@@ -124,7 +124,7 @@ body .form-section .form-content {
 }
 /* line 137, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-content .yes-no-btns:hover {
-	color: #4261a1;
+	color: #1565C0;
 }
 /* line 141, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-content .no-btn {
@@ -159,7 +159,7 @@ form.col.s12.custom-form {
 
 /* line 174, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-nav h2 {
-	color: #4261a1;
+	color: #1565C0;
 	font-size: 18px;
 	font-weight: bold;
 	height: 30px;
@@ -200,8 +200,8 @@ form.col.s12.custom-form {
 }
 /* line 215, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-nav .next {
-	background: #4261a1;
-	border-color: #4261a1;
+	background: #1565C0;
+	border-color: #1565C0;
 	color: #fff;
 	padding: 11px 15px;
 	cursor: pointer;
@@ -209,8 +209,8 @@ form.col.s12.custom-form {
 }
 /* line 224, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-nav .next:hover {
-	background: #4261a1;
-	border-color: #4261a1;
+	background: #1565C0;
+	border-color: #1565C0;
 }
 
 /* line 230, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
@@ -241,7 +241,7 @@ form.col.s12.custom-form {
 }
 /* line 254, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-progress .progressbar li:hover {
-	color: #4261a1;
+	color: #1565C0;
 }
 /* line 258, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-progress .progressbar li:before {
@@ -272,7 +272,7 @@ form.col.s12.custom-form {
 }
 /* line 287, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-progress .progressbar li:before:hover {
-	background: #4261a1;
+	background: #1565C0;
 }
 /* line 291, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-progress .progressbar li:first-child:after {
@@ -317,7 +317,7 @@ form.col.s12.custom-form {
 
 /* line 334, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .top-info-card {
-	background-color: #4261a1;
+	background-color: #1565C0;
 	margin-bottom: 5%;
 	margin-top: 15px;
 	margin-left: auto;
@@ -360,7 +360,7 @@ nav .btn.rounded, nav .rounded.btn-large, nav .rounded.btn-small {
 }
 /* line 380, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 nav .btn.rounded:hover, nav .rounded.btn-large:hover, nav .rounded.btn-small:hover {
-	background-color: #4261a1;
+	background-color: #1565C0;
 }
 /* line 384, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 nav .btn.rounded.inactive, nav .rounded.inactive.btn-large, nav .rounded.inactive.btn-small {
@@ -368,7 +368,7 @@ nav .btn.rounded.inactive, nav .rounded.inactive.btn-large, nav .rounded.inactiv
 }
 /* line 388, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 nav .btn.rounded.inactive:hover, nav .rounded.inactive.btn-large:hover, nav .rounded.inactive.btn-small:hover {
-	background-color: #4261a1;
+	background-color: #1565C0;
 }
 /* line 392, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 nav .top-navigation-icons {
@@ -376,17 +376,17 @@ nav .top-navigation-icons {
 }
 /* line 396, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 nav .top-navigation-icons:hover {
-	color: #4261a1;
+	color: #1565C0;
 }
 
 /* line 401, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .form-content .input-field input[type="submit"] {
-	background: #4261a1;
+	background: #1565C0;
 }
 
 /* line 405, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .handex-btn {
-	background-color: #4261a1;
+	background-color: #1565C0;
 }
 
 /* line 408, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
@@ -401,7 +401,7 @@ nav .top-navigation-icons:hover {
 
 /* line 416, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .active_selection_card {
-	background-color: #4261a1;
+	background-color: #1565C0;
 	color: white;
 }
 
@@ -412,7 +412,7 @@ nav .top-navigation-icons:hover {
 
 /* line 425, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .active_selection_card:hover {
-	background-color: #4261a1;
+	background-color: #1565C0;
 }
 
 /* line 429, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
@@ -457,7 +457,7 @@ nav .top-navigation-icons:hover {
 
 /* line 460, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
-	color: #4261a1;
+	color: #1565C0;
 }
 
 /* line 464, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
@@ -545,7 +545,7 @@ nav ul a:hover {
 /* line 582, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .text-button:hover {
 	background-color: white;
-	color: #4261a1;
+	color: #1565C0;
 }
 
 /* line 587, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
@@ -589,7 +589,7 @@ li .dot {
 /* line 619, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
 .btn, .btn-large, .btn-small, .btn-large, .btn-small {
 	color: #fff;
-	background-color: #4261a1;
+	background-color: #1565C0;
 }
 
 /* line 624, /home/srsh77/dev/localcopy/handex-web-portal/app/assets/stylesheets/style.scss */
